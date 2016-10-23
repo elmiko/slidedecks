@@ -1,0 +1,30 @@
+#cover-logo {
+    position: absolute;
+    top: 50;
+    right: 0;
+    width: 250px;
+    background: rgba(0,0,0,0);
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+div#cover {
+    position: relative;
+    top: 200px;
+    text-align: left;
+}
+
+div#cover h1,
+div#cover h4
+{
+    color: white;
+}
+
+section >img.rhtlogo {
+    position: absolute;
+    top: 600px;
+    right: 0;
+    height: 40px;
+    border: 0;
+    box-shadow: 0 0 0;
+}
