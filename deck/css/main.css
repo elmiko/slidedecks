@@ -28,3 +28,7 @@ section >img.rhtlogo {
     border: 0;
     box-shadow: 0 0 0;
 }
+
+section {
+    text-align: left;
+}
