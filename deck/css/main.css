@@ -12,8 +12,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 64px;
-    background: rgba(0,0,0,0);
+    height: 100px;
+    background: rgba(255,255,255,255);
     border: 0;
     box-shadow: 0 0 0;
 }
