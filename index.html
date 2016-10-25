@@ -25,21 +25,24 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="deck/red-textured-background.svg">
-                  <img id="cover-logo" src="deck/redhat-logo.svg">
-                  <div id="cover">
-                    <h1>Title</h1>
-                    <h4>Sub-Title</h4>
-                  </div>
+				<section id="cover" data-markdown data-background-image="deck/red-textured-background.svg">
+                  <script type="text/template">
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: id="cover-logo" -->
+
+## Title
+#### Sub-Title
+                  </script>
                 </section>
-				<section data-background-image="deck/transparent-textured-background.svg">
-                  <h1>Slide 2</h1>
-                  <p>A list of bullet points</p>
-                  <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                  </ul>
-                  <img class="rhtlogo" src="deck/redhat-logo.svg">
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+# Slide 2
+
+A list of bullet points
+* Item 1
+* Item 2
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
                 </section>
 
 			</div>
