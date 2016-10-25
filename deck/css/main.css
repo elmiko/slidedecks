@@ -48,3 +48,7 @@ section img.rhtlogo {
 section {
     text-align: left;
 }
+
+section .title-pad {
+    padding-bottom: 50px;
+}
