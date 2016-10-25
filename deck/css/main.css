@@ -1,4 +1,4 @@
-#cover-logo {
+#rht-cover-logo {
     position: absolute;
     top: 0;
     right: 0;
@@ -8,10 +8,14 @@
     box-shadow: 0 0 0;
 }
 
-div#cover {
-    position: relative;
-    top: 200px;
-    text-align: left;
+#conf-cover-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 64px;
+    background: rgba(0,0,0,0);
+    border: 0;
+    box-shadow: 0 0 0;
 }
 
 section#cover h1,
