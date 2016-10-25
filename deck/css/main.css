@@ -18,17 +18,21 @@
     box-shadow: 0 0 0;
 }
 
-section#cover {
+section#cover,
+section#cover h1,
+section#cover h2,
+section#cover h3,
+section#cover h4
+{
     color: white;
+}
+
+#cover-name {
+    padding-top: 50px;
 }
 
 #cover-title {
     padding-top: 150px;
-    color: white;
-}
-
-#cover-subtitle {
-    padding-bottom: 50px;
     color: white;
 }
 
