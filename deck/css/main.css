@@ -18,13 +18,17 @@
     box-shadow: 0 0 0;
 }
 
-section#cover h1,
-section#cover h2,
-section#cover h3,
-section#cover h4
-{
-    position: relative;
-    top: 150px;
+section#cover {
+    color: white;
+}
+
+#cover-title {
+    padding-top: 150px;
+    color: white;
+}
+
+#cover-subtitle {
+    padding-bottom: 50px;
     color: white;
 }
 
