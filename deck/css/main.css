@@ -1,6 +1,6 @@
 #cover-logo {
     position: absolute;
-    top: 50;
+    top: 0;
     right: 0;
     width: 250px;
     background: rgba(0,0,0,0);
@@ -14,13 +14,17 @@ div#cover {
     text-align: left;
 }
 
-div#cover h1,
-div#cover h4
+section#cover h1,
+section#cover h2,
+section#cover h3,
+section#cover h4
 {
+    position: relative;
+    top: 150px;
     color: white;
 }
 
-section >img.rhtlogo {
+section img.rhtlogo {
     position: absolute;
     top: 600px;
     right: 0;
