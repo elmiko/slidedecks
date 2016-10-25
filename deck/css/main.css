@@ -18,15 +18,6 @@
     box-shadow: 0 0 0;
 }
 
-section#cover,
-section#cover h1,
-section#cover h2,
-section#cover h3,
-section#cover h4
-{
-    color: white;
-}
-
 #cover-name {
     padding-top: 50px;
 }
@@ -36,11 +27,29 @@ section#cover h4
     color: white;
 }
 
+section#cover,
+section#cover h1,
+section#cover h2,
+section#cover h3,
+section#cover h4
+{
+    color: white;
+}
+
 section img.rhtlogo {
     position: absolute;
     top: 600px;
     right: 0;
     height: 40px;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+section img.conflogo {
+    position: absolute;
+    top: 600px;
+    right: 0;
+    height: 50px;
     border: 0;
     box-shadow: 0 0 0;
 }
