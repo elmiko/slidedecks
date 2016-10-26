@@ -40,8 +40,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="357.38827"
-     inkscape:cy="112.22286"
+     inkscape:cx="365.97457"
+     inkscape:cy="127.37515"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -291,7 +291,7 @@
        sodipodi:cx="-820.00006"
        sodipodi:sides="3"
        id="path3525-6"
-       style="fill:#d3bc5f;stroke:#fff55a;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d3bc5f;stroke:#fffcd1;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:type="star" />
     <path
        transform="matrix(5.847028e-4,0.262072,-0.14777401,0.00103695,-176.31307,701.42894)"
@@ -309,7 +309,7 @@
        sodipodi:cx="-820.00006"
        sodipodi:sides="3"
        id="path3525-9-0"
-       style="fill:#d3bc5f;stroke:#fff55a;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d3bc5f;stroke:#fffcd1;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:type="star" />
     <path
        transform="matrix(5.847028e-4,0.262072,-0.14777401,0.00103695,-40.656697,701.42894)"
@@ -327,7 +327,7 @@
        sodipodi:cx="-820.00006"
        sodipodi:sides="3"
        id="path3525-2-1"
-       style="fill:#d3bc5f;stroke:#fff55a;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d3bc5f;stroke:#fffcd1;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:type="star" />
     <path
        transform="matrix(5.847028e-4,0.262072,-0.14777401,0.00103695,94.999683,701.42894)"
@@ -345,7 +345,7 @@
        sodipodi:cx="-820.00006"
        sodipodi:sides="3"
        id="path3525-28-0"
-       style="fill:#d3bc5f;stroke:#fff55a;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d3bc5f;stroke:#fffcd1;stroke-width:10.16289043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:type="star" />
   </g>
 </svg>
