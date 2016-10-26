@@ -54,6 +54,17 @@ section img.conflogo {
     box-shadow: 0 0 0;
 }
 
+section img.mainimg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
 section {
     text-align: left;
 }
