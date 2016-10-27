@@ -66,6 +66,14 @@ section img.mainimg {
     box-shadow: 0 0 0;
 }
 
+section img.rightimg {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
 section img#ophicleide {
     position: absolute;
     right: 0;
