@@ -92,3 +92,7 @@ section {
 section .title-pad {
     padding-bottom: 25px;
 }
+
+.reveal pre code {
+    max-height: 500px;
+}

@@ -59,11 +59,11 @@ Building Application Pipelines
 
 Case Study: Ophicleide
 
-Deep Dive
-
 Demonstration
 
 Lessons Learned
+
+Next Steps
 
                 </script>
               </section>
@@ -219,22 +219,22 @@ produces:
 ## OpenAPI <!-- .element: class="title-pad" -->
 
 ```
-  NewQueryRequest:
-    description: |-
-      A request to create a new query
-    properties:
-      word:
-        description: |-
-          The word to run the query against
-        type: string
-      model:
-        description: |-
-          The unique identifier for the training model to use
-          in the query
-        type: string
-    required:
-      - word
-      - model
+NewQueryRequest:
+  description: |-
+    A request to create a new query
+  properties:
+    word:
+      description: |-
+        The word to run the query against
+      type: string
+    model:
+      description: |-
+        The unique identifier for the training model to use
+        in the query
+      type: string
+  required:
+    - word
+    - model
 ```
                 </script>
               </section>
@@ -268,6 +268,9 @@ produces:
 ## OpenAPI <!-- .element: class="title-pad" -->
 
 ```
+/queries:
+  post:
+    ...
     responses:
       "201":
         description: |-
@@ -288,6 +291,21 @@ produces:
 
               <section data-markdown data-background-image="deck/transparent-textured-background.svg">
                 <script type="text/template">
+## OpenAPI <!-- .element: class="title-pad" -->
+
+```
+app = connexion.App(__name__, specification_dir='./swagger/')
+app.add_api('swagger.yaml',
+            arguments={'title':
+                       'The REST API for the Ophicleide '
+                       'Word2Vec server'})
+app.run(port=8080)
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
 ## Deep Dive <!-- .element: class="title-pad" -->
 
 ![ConfigData 1](deck/img/configdata1.svg) <!-- .element: class="mainimg" -->
@@ -301,6 +319,197 @@ Configuration Data
               <section data-markdown data-background-image="deck/transparent-textured-background.svg">
                 <script type="text/template">
 ## Configuration Data <!-- .element: class="title-pad" -->
+
+```
+spec:
+  containers:
+    - name: ${WEBNAME}
+      image: ${WEBIMAGE}
+      env:
+        - name: OPH_TRAINING_ADDR
+          value: ${OPH_ADDR}
+        - name: OPH_TRAINING_PORT
+          value: ${OPH_PORT}
+        - name: OPH_WEB_PORT
+          value: "8081"
+      ports:
+        - containerPort: 8081
+          protocol: TCP
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Configuration Data <!-- .element: class="title-pad" -->
+
+```
+spec:
+  containers:
+    ...
+    - name: ${TRAINNAME}
+      image: ${TRAINIMAGE}
+      env:
+        - name: OPH_MONGO_URL
+          value: ${MONGO}
+        - name: OPH_SPARK_MASTER_URL
+          value: ${SPARK}
+      ports:
+        - containerPort: 8080
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Configuration Data <!-- .element: class="title-pad" -->
+
+```
+var training_addr = process.env.OPH_TRAINING_ADDR || '127.0.0.1';
+var training_port = process.env.OPH_TRAINING_PORT || '8080';
+var web_port = process.env.OPH_WEB_PORT || 8080;
+
+app.get("/api/models", function(req, res) {
+  var url = `http://${training_addr}:${training_port}/models`;
+  request.get(url).pipe(res);
+});
+
+app.get("/api/queries", function(req, res) {
+  var url = `http://${training_addr}:${training_port}/queries`;
+  request.get(url).pipe(res);
+});
+
+app.listen(ophicleide_web_port, function() {
+  console.log(`ophicleide-web listening on ${web_port}`);
+});
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Configuration Data <!-- .element: class="title-pad" -->
+
+```
+train_q = Queue()
+result_q = Queue()
+
+master = environ.get("OPH_MASTER", "local[*]")
+dburl = environ.get("OPH_DBURL", "mongodb://localhost")
+
+args = (master, train_q, result_q, dburl)
+p = Process(target=workloop, args=args)
+p.start()
+```
+```
+def workloop(master, inq, outq, dburl):
+    sconf = SparkConf().setAppName(
+        "ophicleide-worker").setMaster(master)
+    sc = SparkContext(conf=sconf)
+
+    if dburl is not None:
+        db = pymongo.MongoClient(dburl).ophicleide
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Secrets <!-- .element: class="title-pad" -->
+
+Not used in Ophicleide, but worth mentioning
+```
+  volumes:
+      - name: mongo-secret-volume
+        secret:
+          secretName: mongo-secret
+  containers:
+    - name: shiny-squirrel
+      image: elmiko/shiny_squirrel
+      args: ["mongodb"]
+      volumeMounts:
+        - name: mongo-secret-volume
+          mountPath: /etc/mongo-secret
+          readOnly: true
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Secrets <!-- .element: class="title-pad" -->
+
+Each secret exposed as a file in the container
+```
+MONGO_USER=$(cat /etc/mongo-secret/username)
+MONGO_PASS=$(cat /etc/mongo-secret/password)
+
+/usr/bin/python /opt/shiny_squirrel/shiny_squirrel.py \
+    --mongo \
+    mongodb://${MONGO_USER}:${MONGO_PASS}@${MONGO_HOST_PORT}
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Deep Dive <!-- .element: class="title-pad" -->
+
+Spark processing
+* Read text from URL
+* Split words
+* Create vectors
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Spark Processing <!-- .element: class="title-pad" -->
+
+```
+def workloop(master, inq, outq, dburl):
+    sconf = SparkConf().setAppName(
+        "ophicleide-worker").setMaster(master)
+    sc = SparkContext(conf=sconf)
+
+    if dburl is not None:
+        db = pymongo.MongoClient(dburl).ophicleide
+
+    outq.put("ready")
+
+    while True:
+        job = inq.get()
+        urls = job["urls"]
+        mid = job["_id"]
+        model = train(sc, urls)
+
+        items = model.getVectors().items()
+        words, vecs = zip(*[(w, list(v)) for w, v in items])
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Spark Processing <!-- .element: class="title-pad" -->
+
+```
+def train(sc, urls):
+    w2v = Word2Vec()
+    rdds = reduce(lambda a, b: a.union(b),
+                  [url2rdd(sc, url) for url in urls])
+    return w2v.fit(rdds)
+```
+```
+def url2rdd(sc, url):
+    response = urlopen(url)
+    corpus_bytes = response.read()
+    text = str(
+        corpus_bytes).replace("\\r", "\r").replace("\\n", "\n")
+    rdd = sc.parallelize(text.split("\r\n\r\n"))
+    rdd.map(lambda l: l.replace("\r\n", " ").split(" "))
+    return rdd.map(lambda l: cleanstr(l).split(" "))
+```
                 </script>
               </section>
 
