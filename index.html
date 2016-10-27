@@ -193,6 +193,99 @@ Building blocks
                   </script>
                 </section>
 
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Deep Dive <!-- .element: class="title-pad" -->
+
+OpenAPI
+
+```
+swagger: "2.0"
+info:
+  title: Ophicleide REST Server
+  description: |-
+    The REST API for the Ophicleide Word2Vec server
+  version: "0.0.0"
+consumes:
+  - application/json
+produces:
+  - application/json
+```
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## OpenAPI <!-- .element: class="title-pad" -->
+
+```
+  NewQueryRequest:
+    description: |-
+      A request to create a new query
+    properties:
+      word:
+        description: |-
+          The word to run the query against
+        type: string
+      model:
+        description: |-
+          The unique identifier for the training model to use
+          in the query
+        type: string
+    required:
+      - word
+      - model
+```
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## OpenAPI <!-- .element: class="title-pad" -->
+
+```
+/queries:
+  post:
+    description: |-
+      Create a new query
+    operationId: createQuery
+    tags:
+      - queries
+    parameters:
+      - name: newQuery
+        in: body
+        description: |-
+          The query to execute
+        required: true
+        schema:
+          $ref: "#/definitions/NewQueryRequest"
+```
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## OpenAPI <!-- .element: class="title-pad" -->
+
+```
+    responses:
+      "201":
+        description: |-
+          Valid new query response
+        schema:
+          properties:
+            query:
+              properties:
+                $ref: "#/definitions/QueryResponse"
+        default:
+          description: |-
+            Unexpected error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+```
+                  </script>
+                </section>
+
 			</div>
 		</div>
 
