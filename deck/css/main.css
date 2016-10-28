@@ -111,6 +111,10 @@ section .title-pad {
     padding-bottom: 25px;
 }
 
+.reveal a {
+    color: black
+}
+
 .reveal pre code {
     max-height: 500px;
 }
