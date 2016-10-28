@@ -27,6 +27,12 @@
     color: white;
 }
 
+#thanks {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
 section#cover,
 section#cover h1,
 section#cover h2,
@@ -72,6 +78,18 @@ section img.rightimg {
     top: 100px;
     border: 0;
     box-shadow: 0 0 0;
+}
+
+section img.thanksimg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    box-shadow: 0 0 0;
+    background: rgba(0,0,0,0);
 }
 
 section img#ophicleide {
