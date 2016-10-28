@@ -126,7 +126,7 @@ Insightful analytics
 ![Building 1](deck/img/building1.svg) <!-- .element: class="mainimg" -->
 Decompose application components
 * Natural breakpoints
-* Build modularly
+* Build for modularity
 * Stateless versus stateful
 
                 </script>
@@ -190,6 +190,7 @@ Building blocks
 * Node.js
 * Flask
 * MongoDB
+* OpenAPI
                 </script>
               </section>
 
@@ -509,6 +510,34 @@ def url2rdd(sc, url):
     rdd = sc.parallelize(text.split("\r\n\r\n"))
     rdd.map(lambda l: l.replace("\r\n", " ").split(" "))
     return rdd.map(lambda l: cleanstr(l).split(" "))
+```
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## Spark Processing <!-- .element: class="title-pad" -->
+
+```
+def create_query(newQuery) -> str:
+    mid = newQuery["model"]
+    word = newQuery["word"]
+    model = model_cache_find(mid)
+    if model is None:
+        msg = (("no trained model with ID %r available; " % mid)
+              + "check /models to see when one is ready")
+        return json_error("Not Found", 404, msg)
+    else:
+        # XXX
+        w2v = model["w2v"]
+        qid = uuid4()
+        try:
+            syns = w2v.findSynonyms(word, 5)
+            q = {
+                "_id": qid, "word": word, "results": syns,
+                 "modelName": model["name"], "model": mid
+            }
+            (query_collection()).insert_one(q)
 ```
                 </script>
               </section>
