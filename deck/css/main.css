@@ -33,6 +33,14 @@
     text-align: center;
 }
 
+section p.hashtag {
+    position: absolute;
+    top: 675px;
+    left: 0;
+    color: #aaaaaa;
+    font-size: 16pt;
+}
+
 section#cover,
 section#cover h1,
 section#cover h2,
