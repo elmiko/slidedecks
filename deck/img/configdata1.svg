@@ -130,75 +130,63 @@
          id="tspan4348"
          x="139.62953"
          y="600.72211">Kubernetes</tspan></text>
-    <g
-       id="g4824"
-       transform="translate(-22.857109,-38.714286)">
-      <rect
-         ry="0.90349722"
-         y="553.63715"
-         x="-344.95859"
-         height="24.360939"
-         width="206.6279"
-         id="rect3338-1-8-9-8"
-         style="fill:#ffffff;stroke:#000000;stroke-width:1.41355312;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3342-3-7-37"
-         y="570.34564"
-         x="-340.84866"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.15157127px;line-height:125%;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="570.34564"
-           x="-340.84866"
-           id="tspan3344-4-8-9"
-           sodipodi:role="line">REST_ADDR=127.0.0.1</tspan></text>
-    </g>
-    <g
-       id="g4829"
-       transform="translate(-31.78568,-23.571429)">
-      <rect
-         ry="0.91013753"
-         y="587.4762"
-         x="-336.11954"
-         height="24.53998"
-         width="156.4498"
-         id="rect3338-1-8-9-8-7"
-         style="fill:#ffffff;stroke:#000000;stroke-width:1.23451185;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3342-3-7-37-3"
-         y="604.27423"
-         x="-331.20581"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.15157127px;line-height:125%;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="604.27423"
-           x="-331.20581"
-           id="tspan3344-4-8-9-7"
-           sodipodi:role="line">REST_PORT=8080</tspan></text>
-    </g>
-    <g
-       id="g4834"
-       transform="translate(-18.571429,11)">
-      <rect
-         ry="0.88658726"
-         y="457.43652"
-         x="-349.0163"
-         height="23.904997"
-         width="368.31482"
-         id="rect3338-1-8-9-8-1"
-         style="fill:#ffffff;stroke:#000000;stroke-width:1.86949611;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3342-3-7-37-2"
-         y="473.60831"
-         x="-345.84866"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.15157127px;line-height:125%;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="473.60831"
-           x="-345.84866"
-           id="tspan3344-4-8-9-2"
-           sodipodi:role="line">MONGO=mongodb://admin:admin@mongodb</tspan></text>
-    </g>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3338-1-8-9-8"
+       width="206.6279"
+       height="24.360939"
+       x="-367.8157"
+       y="514.92285"
+       ry="0.90349722" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.15157127px;line-height:125%;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="-363.70578"
+       y="531.63135"
+       id="text3342-3-7-37"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3344-4-8-9"
+         x="-363.70578"
+         y="531.63135">REST_ADDR=127.0.0.1</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3338-1-8-9-8-7"
+       width="156.4498"
+       height="24.53998"
+       x="-367.90521"
+       y="563.90479"
+       ry="0.91013753" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.15157127px;line-height:125%;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-362.99149"
+       y="580.70282"
+       id="text3342-3-7-37-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3344-4-8-9-7"
+         x="-362.99149"
+         y="580.70282">REST_PORT=8080</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3338-1-8-9-8-1"
+       width="368.31482"
+       height="23.904997"
+       x="-367.58774"
+       y="468.43652"
+       ry="0.88658726" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.15157127px;line-height:125%;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-364.4201"
+       y="484.60831"
+       id="text3342-3-7-37-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3344-4-8-9-2"
+         x="-364.4201"
+         y="484.60831">MONGO=mongodb://admin:admin@mongodb</tspan></text>
     <g
        id="g4868">
       <path
