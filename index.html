@@ -225,16 +225,16 @@ OpenAPI
 \#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
 
 ```
-swagger: "2.0"
-info:
-  title: Ophicleide REST Server
-  description: |-
-    The REST API for the Ophicleide Word2Vec server
-  version: "0.0.0"
-consumes:
-  - application/json
-produces:
-  - application/json
+paths:
+  /:
+    get:
+      description: |-
+        Returns information about the server version
+      responses:
+        "200":
+          description: |-
+            Valid server info response
+          schema:
 ```
 ```
 app = connexion.App(__name__, specification_dir='./swagger/')
@@ -318,18 +318,18 @@ app.listen(ophicleide_web_port, function() {
 
 Not used in Ophicleide, but worth mentioning
 ```
-  volumes:
+volumes:
+    - name: mongo-secret-volume
+      secret:
+        secretName: mongo-secret
+containers:
+  - name: shiny-squirrel
+    image: elmiko/shiny_squirrel
+    args: ["mongodb"]
+    volumeMounts:
       - name: mongo-secret-volume
-        secret:
-          secretName: mongo-secret
-  containers:
-    - name: shiny-squirrel
-      image: elmiko/shiny_squirrel
-      args: ["mongodb"]
-      volumeMounts:
-        - name: mongo-secret-volume
-          mountPath: /etc/mongo-secret
-          readOnly: true
+        mountPath: /etc/mongo-secret
+        readOnly: true
 ```
                 </script>
               </section>
