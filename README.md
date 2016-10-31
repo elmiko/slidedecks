@@ -1,4 +1,4 @@
-# Slidedeck for conference <insert name here>
+# Slidedeck for conference Apache Big Data EU 2016
 
 This repository is based on the
 [reveal.js](https://github.com/hakimel/reveal.js) project, it is forked from
@@ -10,7 +10,23 @@ for more information.
 
 ## Original presentation information
 
-*Link to presentation or summary goes here*
+**Building Apache Spark application pipelines for the Kubernetes ecosystem**
+
+[schedule link](https://apachebigdataeu2016.sched.org/event/8U0C)
+
+Apache Spark based applications are often comprised of many separate,
+interconnected components that are a good match for an orchestrated
+containerized platform like Kubernetes. But with the increased flexibility
+afforded by these technologies comes a new set challenges for building rich
+data-centric applications.
+
+In this presentation we will discuss techniques for building multi-component
+Apache Spark based applications that can be easily deployed and managed on a
+Kubernetes infrastructure. Building on experiences learned while developing
+and deploying cloud native applications on an OpenShift platform, we will
+explore common issues that arise during the engineering process and
+demonstrate workflows for easing the maintenance factors associated with
+complex installations.
 
 ## Installation
 
