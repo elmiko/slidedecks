@@ -213,6 +213,16 @@ Building blocks
 \#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
 
 OpenAPI
+* Schema for REST APIs
+* Wealth of tooling
+* Central discussion point
+                </script>
+              </section>
+
+              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                <script type="text/template">
+## OpenAPI <!-- .element: class="title-pad" -->
+\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
 
 ```
 swagger: "2.0"
@@ -226,92 +236,6 @@ consumes:
 produces:
   - application/json
 ```
-                </script>
-              </section>
-
-              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                <script type="text/template">
-## OpenAPI <!-- .element: class="title-pad" -->
-\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
-
-```
-NewQueryRequest:
-  description: |-
-    A request to create a new query
-  properties:
-    word:
-      description: |-
-        The word to run the query against
-      type: string
-    model:
-      description: |-
-        The unique identifier for the training model to use
-        in the query
-      type: string
-  required:
-    - word
-    - model
-```
-                </script>
-              </section>
-
-              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                <script type="text/template">
-## OpenAPI <!-- .element: class="title-pad" -->
-\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
-
-```
-/queries:
-  post:
-    description: |-
-      Create a new query
-    operationId: createQuery
-    tags:
-      - queries
-    parameters:
-      - name: newQuery
-        in: body
-        description: |-
-          The query to execute
-        required: true
-        schema:
-          $ref: "#/definitions/NewQueryRequest"
-```
-                </script>
-              </section>
-
-              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                <script type="text/template">
-## OpenAPI <!-- .element: class="title-pad" -->
-\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
-
-```
-/queries:
-  post:
-    ...
-    responses:
-      "201":
-        description: |-
-          Valid new query response
-        schema:
-          properties:
-            query:
-              properties:
-                $ref: "#/definitions/QueryResponse"
-        default:
-          description: |-
-            Unexpected error
-          schema:
-            $ref: "#/definitions/ErrorResponse"
-```
-                </script>
-              </section>
-
-              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                <script type="text/template">
-## OpenAPI <!-- .element: class="title-pad" -->
-\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
-
 ```
 app = connexion.App(__name__, specification_dir='./swagger/')
 app.add_api('swagger.yaml',
@@ -366,28 +290,6 @@ spec:
 \#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
 
 ```
-spec:
-  containers:
-    ...
-    - name: ${TRAINNAME}
-      image: ${TRAINIMAGE}
-      env:
-        - name: OPH_MONGO_URL
-          value: ${MONGO}
-        - name: OPH_SPARK_MASTER_URL
-          value: ${SPARK}
-      ports:
-        - containerPort: 8080
-```
-                </script>
-              </section>
-
-              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                <script type="text/template">
-## Configuration Data <!-- .element: class="title-pad" -->
-\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
-
-```
 var training_addr = process.env.OPH_TRAINING_ADDR || '127.0.0.1';
 var training_port = process.env.OPH_TRAINING_PORT || '8080';
 var web_port = process.env.OPH_WEB_PORT || 8080;
@@ -405,34 +307,6 @@ app.get("/api/queries", function(req, res) {
 app.listen(ophicleide_web_port, function() {
   console.log(`ophicleide-web listening on ${web_port}`);
 });
-```
-                </script>
-              </section>
-
-              <section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                <script type="text/template">
-## Configuration Data <!-- .element: class="title-pad" -->
-\#ApacheBigData EU 2016 <!-- .element: class="hashtag" -->
-
-```
-train_q = Queue()
-result_q = Queue()
-
-master = environ.get("OPH_MASTER", "local[*]")
-dburl = environ.get("OPH_DBURL", "mongodb://localhost")
-
-args = (master, train_q, result_q, dburl)
-p = Process(target=workloop, args=args)
-p.start()
-```
-```
-def workloop(master, inq, outq, dburl):
-    sconf = SparkConf().setAppName(
-        "ophicleide-worker").setMaster(master)
-    sc = SparkContext(conf=sconf)
-
-    if dburl is not None:
-        db = pymongo.MongoClient(dburl).ophicleide
 ```
                 </script>
               </section>
