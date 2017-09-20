@@ -1,79 +1,485 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="deck/theme/redhat-light.css">
-		<link rel="stylesheet" href="deck/css/main.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="deck/theme/redhat-light.css">
+    <link rel="stylesheet" href="deck/css/main.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section id="cover" data-markdown data-background-image="deck/red-textured-background.svg">
-                  <script type="text/template">
-![Red Hat Logo](deck/redhat-logo-reverse.svg) <!-- .element: id="rht-cover-logo" -->
+    <!-- Printing and PDF exports -->
+    <script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="cover" data-background-image="deck/strata-background.jpg">
+          <img src="deck/redhat-logo-reverse.svg" id="rht-cover-logo">
+          <h3 id="cover-title">From notebook to cloud native</h3>
+          <h4>A modern path for data-driven applications</h4>
+          <div id="cover-name-div">
+            Michael McCune - msm@redhat.com
+          </div>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Who am i <!-- .element: class="pad-after-2" -->
 
-## Title <!-- .element: id="cover-title" -->
-#### Sub-Title
+* embedded to orchestration <!-- .element: class="fragment" -->
+* emerging technology @ Red Hat <!-- .element: class="fragment" -->
+* big data on OpenStack and OpenShift <!-- .element: class="fragment" -->
 
-Presenter Name <!-- .element id="cover-name" -->
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
 
-Date
-                  </script>
-                </section>
-				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
-                  <script type="text/template">
-# Slide 2
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### We're talking about a journey
 
-A list of bullet points
-* Item 1
-* Item 2
+![](deck/idea-to-product.svg) <!-- .element: class="center pad-before-1" -->
 
-![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
-                  </script>
-                </section>
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
 
-			</div>
-		</div>
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+![](deck/waytoeverest-samhawley.jpg) <!-- .element: id="levelset" -->
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				history: true,
+*photography by Sam Hawley* <!-- .element: class="photo-attrib" -->
 
-                controls: false,
-                slideNumber: true,
-                center: false,
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+
+![](deck/grand-central-diliff-janke.jpg) <!-- .element: id="levelset" -->
+
+*photography by Diliff and Janke* <!-- .element: class="photo-attrib" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+
+![](deck/levelset.jpg) <!-- .element: id="levelset" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Let's talk containers <!-- .element: class="pad-after-2" -->
+
+![](deck/containers-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Let's talk containers <!-- .element: class="pad-after-2" -->
+
+![](deck/containers-2.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Let's talk containers <!-- .element: class="pad-after-2" -->
+
+![](deck/containers-3.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What about microservices?
+
+![](deck/microservices-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What about microservices? <!-- .element: class="pad-after-1" -->
+
+![](deck/microservices-2.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What about microservices? <!-- .element: class="pad-after-1" -->
+
+![](deck/microservices-3.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What about microservices? <!-- .element: class="pad-after-1" -->
+
+![](deck/microservices-4.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What about microservices? <!-- .element: class="pad-after-1" -->
+
+![](deck/microservices-5.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-2.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-3.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-4.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-5.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-6.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Intelligence architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/architecture-7.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+            </textarea>
+          </section>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### intelligent application lifecycles <!-- .element: class="pad-after-2" -->
+
+![](deck/lifecycle-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+
+# DEMO <!-- .element: class="pad-before-2" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Going cloud native <!-- .element: class="pad-after-2" -->
+
+![](deck/cloud-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What is cloud native?
+
+![](deck/cncf.png) <!-- .element: id="cncf-logo" class="center fragment pad-before-1" -->
+
+* Containerized <!-- .element: class="fragment pad-before-1" -->
+* Dynamically orchestrated <!-- .element: class="fragment" -->
+* Microservice oriented <!-- .element: class="fragment" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### What will your application do? <!-- .element: class="pad-after-3" -->
+
+![](deck/ingest-process-publish.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Storyboard your architecture <!-- .element: class="pad-after-2" -->
+
+![](deck/storyboard-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Construct your application <!-- .element: class="pad-after-2" -->
+
+![](deck/construct-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+
+## Case Study: var-sandbox <!-- .element: class="pad-before-3" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### General architecture
+
+![](deck/var-sandbox-1.svg) <!-- .element: class="center pad-before-1" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### How was it built?
+
+![](deck/var-sandbox-2.svg) <!-- .element: class="center pad-before-1" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+
+# DEMO <!-- .element: class="pad-before-2" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Moving out of alpha
+
+![](deck/var-sandbox-3.svg) <!-- .element: class="center pad-before-1" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown class="center">
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+
+## Lessons learned <!-- .element: class="pad-before-3" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Code comments 3.0
+
+![](deck/notebook-learning.png) <!-- .element: class="center pad-before-1" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Templated repeatability
+
+![](deck/templated-repeatability.svg) <!-- .element: class="center pad-before-1" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### It's not all roses <!-- .element: class="pad-after-2" -->
+
+* Spark configurations can still be tricky <!-- .element: class="fragment" -->
+* Notebooks add another layer of infrastructure <!-- .element: class="fragment" -->
+* Even with improved comments, code can be difficult <!-- .element: class="fragment" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Communication is the path forward
+
+![](deck/communication-1.svg) <!-- .element: class="center" -->
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+<!-- .slide: data-background-image="deck/transparent-textured-background.svg" -->
+### Try it for yourself! <!-- .element: class="pad-after-2" -->
+
+![](deck/radley.png) <!-- .element: id="radley" -->
+
+**https://radanalytics.io** hosts **tutorials**, **example projects**, and **more**
+
+**Keep in touch:** **@FOSSjunkie**
+
+\#StrataData <!-- .element: class="hashtag" -->
+          </textarea>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+  history: true,
+
+  controls: false,
+  slideNumber: true,
+  center: false,
+  transition: 'fade',
+
+  // More info https://github.com/hakimel/reveal.js#dependencies
+  dependencies: [
+    { src: 'plugin/markdown/marked.js' },
+    { src: 'plugin/markdown/markdown.js' },
+    { src: 'plugin/notes/notes.js', async: true },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+});
+    </script>
+  </body>
 </html>
