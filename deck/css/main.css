@@ -1,3 +1,9 @@
+.reveal section img {
+    background: rgba(0,0,0,0);
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
 #rht-cover-logo {
     position: absolute;
     top: 0;
@@ -27,8 +33,14 @@ section#cover h4
     color: white;
 }
 
+section#cover
+{
+    padding-left: 50px;
+}
+
 #cover-name {
     padding-top: 50px;
+    font-size: .75em;
 }
 
 #cover-title {
@@ -48,3 +60,94 @@ section img.rhtlogo {
 section {
     text-align: left;
 }
+
+#cover-hashtag {
+    padding-top: 3em;
+}
+
+#page-hashtag {
+    text-align: center;
+    font-size: .75em;
+    position: absolute;
+    top: 655px;
+    left: 400px;
+}
+
+.reveal section .pad-after {
+    padding-bottom: 1em;
+}
+
+.reveal section .pad-right {
+    padding-right: 2em;
+}
+
+.reveal section .center {
+    text-align: center;
+}
+
+.reveal pre code {
+    max-height: 520px;
+    font-size: .65em;
+    line-height: 1.2;
+}
+
+.reveal pre code.config {
+    max-height: 520px;
+    font-size: 1em;
+    line-height: 4;
+}
+
+.reveal pre code.bigger {
+    font-size: 1em;
+}
+
+.reveal pre code.big {
+    font-size: .75em;
+}
+
+.reveal pre code.noscroll {
+    overflow: hidden;
+}
+
+.reveal section .img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reveal section img.jconsole {
+    max-height: 480px;
+}
+
+.reveal section code.smaller {
+    font-size: .75em;
+}
+
+.reveal section code.jmx {
+    font-size: .95em;
+    line-height: 2;
+}
+
+.reveal section img#datacenter {
+    max-height: 600px;
+}
+
+.reveal section .pad-before-1 {
+    padding-top: 1em;
+}
+
+#cncf-logo {
+    width: 50%;
+}
+
+.reveal section img.cn-app {
+    max-height: 525px;
+}
+
+.reveal section ul.github {
+    list-style-image: url(../github.png);
+    line-height: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
