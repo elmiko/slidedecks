@@ -25,27 +25,562 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section id="cover" data-markdown data-background-image="deck/red-textured-background.svg">
-                  <script type="text/template">
-![Red Hat Logo](deck/redhat-logo-reverse.svg) <!-- .element: id="rht-cover-logo" -->
+				<section id="cover" data-background-image="deck/red-textured-background.svg">
+                  <img src="deck/redhat-logo-reverse.svg" id="rht-cover-logo">
 
-## Title <!-- .element: id="cover-title" -->
-#### Sub-Title
+                  <div id="cover-title">Pythonic cloud native Apache Spark design patterns</div>
 
-Presenter Name <!-- .element id="cover-name" -->
-
-Date
-                  </script>
+                  <div id="cover-name">
+                    Michael McCune - msm@redhat.com<br/>
+                  </div>
                 </section>
-				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section>
+                    <img src="deck/levelset.jpg" id="levelset" class="center">
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <div class="frame">
+                      <img src="deck/python-logo-inkscape.svg" width="700px" class="center">
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <div class="frame">
+                      <img src="deck/spark-logo.svg" width="550px" class="center">
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <div class="frame">
+                      <img src="deck/OpenShift-LogoType.svg" width="450px" class="center">
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### What is cloud native?
+
+![](deck/cncf.png) <!-- .element: id="cncf-logo" class="center fragment pad-before-1" -->
+
+* Containerized <!-- .element: class="fragment pad-before-1" -->
+* Dynamically orchestrated <!-- .element: class="fragment" -->
+* Microservice oriented <!-- .element: class="fragment" -->
+* <!-- .element: class="fragment" --> **cncf.io/about/faq**
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+
+				<section data-markdown>
                   <script type="text/template">
-# Slide 2
+#### OpenShift architecture
 
-A list of bullet points
-* Item 1
-* Item 2
+![](deck/openshift-architecture.png) <!-- .element: class="center frame-500 pad-before-1" -->
 
-![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+
+				<section data-markdown>
+                  <script type="text/template">
+#### Spark on OpenShift
+
+![](deck/spark-openshift.svg) <!-- .element: class="center frame-500 pad-before-1" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section>
+                    <h4>General Spark architecture</h4>
+                    <img src="deck/spark-arch.svg" id="sparkarch" class="center pad-before-1">
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <h4>How to interact with Spark</h4>
+                    <div class="fragment pad-before-1" data-fragment-index="1">
+                      Run an application
+                      <pre><code class="hljs stylus">
+ spark-submit --master=local[1] MyApp.py
+                      </code></pre>
+                    </div>
+                    <div class="fragment" data-fragment-index="2">
+                      Start a REPL
+                      <div class="code-box pad-left-1 fragment" data-fragment-index="3">
+                        <div class="col-1">Scala</div>
+                        <div class="col-2"><pre><code class="hljs stylus">&nbsp;spark-shell</code></pre></div>
+                        <div class="col-1">Python</div>
+                        <div class="col-2"><pre><code class="hljs stylus">&nbsp;pyspark</code></pre></div>
+                        <div class="col-1">R</div>
+                        <div class="col-2"><pre><code class="hljs stylus">&nbsp;sparkR</code></pre></div>
+                      </div>
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <h4>The fundamental Spark abstraction</h4>
+                    <div class="frame-500 frame-column frame-center">
+                      <div class="center fragment">
+                        <span id="rdd">Resilient distributed dataset (RDD)</span>
+                      </div>
+                      <div class="center fragment pad-before-1">
+                        <span id="rdd-desc">are
+                          <span class="fragment highlight-red">partitioned</span>,
+                          <span class="fragment highlight-red">lazy</span>,
+                          and <span class="fragment highlight-red">immutable</span>
+                          homogenous collections</span>
+                      </div>
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <h4>Resilient distributed datasets in action</h4>
+                    <div class="pad-before-1" class="center" style="display: flex;">
+                      <img src="deck/example-array.svg" height="100px" class="fragment">
+                      <img src="deck/example-parallelize.svg" height="100px" class="fragment">
+                    </div>
+                    <div class="pad-before-1" class="center" style="display: flex;">
+                      <img src="deck/example-rdd1.svg" height="100px" class="fragment">
+                      <img src="deck/example-filter.svg" height="100px" class="fragment">
+                    </div>
+                    <div class="pad-before-1" style="display: flex;">
+                      <img src="deck/example-rdd2.svg" height="100px" class="fragment">
+                      <img src="deck/example-count.svg" height="100px" class="fragment">
+                      <img src="deck/example-result.svg" height="100px" class="fragment">
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### What is a Spark application?
+
+![](deck/what-is-a-spark-app.svg) <!-- .element: class="center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+
+                  <section>
+                    <h4>simple.py</h4>
+                    <div class="frame-500">
+                      <pre><code class="python hljs stylus" data-noescape> 1 import sys
+ 2 from pyspark.sql import SparkSession
+ 3
+ 4 spark = SparkSession.builder.appName("simple").getOrCreate()
+ 5
+ 6 data = range(int(sys.argv[1]))
+ 7
+ 8 evens = spark.sparkContext.<span class="fragment highlight-green">parallelize</span>(data)\
+ 9         .<span class="fragment highlight-green">filter</span>(lambda x: x%2 == 0)\
+10         .<span class="fragment highlight-green">count</span>()
+11
+12 print("Out of 0-{} there are {} even numbers."
+13       .format(sys.argv[1], evens))
+                      </code></pre>
+
+                      <p class="hashtag">#devconfcz</p>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div class="frame-600">
+                      <img src="deck/simple-spark-no-loop.gif" class="center">
+                    </div>
+                      <p class="hashtag">#devconfcz</p>
+                  </section>
+
+                  <section data-markdown>
+                    <script type="text/template">
+#### Something a little more complex
+
+![](deck/complex-spark.svg) <!-- .element: class="center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### Designing a Spark microservice
+
+![](deck/ingest-process-publish.svg) <!-- .element: class="center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+
+                  <section data-markdown>
+                    <script type="text/template">
+#### Consider your structural needs
+
+![](deck/before-code.svg) <!-- .element: width="800px" class="center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### On-demand batch processing
+
+![](deck/on-demand-batch.svg) <!-- .element: class="center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+
+                  <section>
+                    <h4>On-demand batch processing</h4>
+                    <pre><code class="python hljs stylus" data-noescape> 1 def produce_pi(scale):
+ 2     spark = SparkSession.builder.appName("PythonPi")\
+ 3             .getOrCreate()
+ 4     n = 100000 * scale
+ 5
+ 6     def f(_):
+ 7         from random import random
+ 8         x = random()
+ 9         y = random()
+10         return 1 if x ** 2 + y ** 2 <= 1 else 0
+11
+12     count = spark.sparkContext\
+13             .<span class="fragment highlight-green">parallelize</span>(xrange(1, n + 1), scale)\
+14             .<span class="fragment highlight-green">map</span>(f)\
+15             .<span class="fragment highlight-green">reduce</span>(lambda x, y: x + y)
+16     spark.stop()
+17     pi = 4.0 * count / n
+18     return pi</pre></code>
+                    <p class="link-text">github.com/radanalyticsio/tutorial-sparkpi-python-flask/app.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+
+                  <section>
+                    <h4>On-demand batch processing, HTTP server style</h4>
+                    <div class="pad-before-1">
+                      <pre><code class="python hljs stylus" data-noescape> 1 @app.route("/sparkpi")
+ 2 def sparkpi():
+ 3     scale = int(request.args.get('scale', 2))
+ 4     pi = <span class="fragment highlight-green">produce_pi</span>(scale)
+ 5     response = "Pi is roughly {}".format(pi)
+ 6
+ 7     return response</pre></code>
+                    </div>
+                    <p class="link-text">github.com/radanalyticsio/tutorial-sparkpi-python-flask/app.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+
+                  <section>
+                    <h4>On-demand batch processing, gRPC server style</h4>
+                    <div class="pad-before-1">
+                      <pre><code class="python hljs stylus" data-noescape> 1 class SparkPiServicer(sparkpi_pb2_grpc.SparkPiServicer):
+ 2     def __init__(self, *args, **kwargs):
+ 3         super(SparkPiServicer, self).__init__(*args, **kwargs)
+ 4         self.lock = threading.Lock()
+ 5
+ 6     def GetPi(self, request, context):
+ 7         self.lock.acquire()
+ 8         print('Scale requested = {}'.format(request.size))
+ 9         pi = <span class="fragment highlight-green">produce_pi</span>(request.size)
+10         self.lock.release()
+11         return sparkpi_pb2.Pi(value=pi)</pre></code>
+                    </div>
+                    <p class="link-text">github.com/elmiko/sparkpi-python-grpc</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### Continuous batch processing
+
+![](deck/continuous-batch.svg) <!-- .element: class="center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                  <section>
+                    <h4>Continuous batch processing</h4>
+                      <pre><code class="python hljs stylus" data-noescape> 1 while True:
+ 2     cursor.execute("SELECT * FROM ratings")
+ 3     current_ratings_length = cursor.rowcount
+ 4
+ 5     if current_ratings_length != ratings_length:
+ 6         ratings_length = current_ratings_length
+ 7         ratings = cursor.fetchall()
+ 8         ratingsRDD = sc.<span class="fragment highlight-green">parallelize</span>(ratings)
+ 9         ratingsRDD = ratingsRDD.<span class="fragment highlight-green">map</span>(
+10                                 lambda x: (x[0], x[1], x[2]))
+11         model_version += 1
+12         logger.info("model version={}".format(model_version))
+13         model = modeller.Trainer(data=ratingsRDD,
+14                             rank=parameters['rank'],
+15                             iterations=parameters['iteration'],
+16                             lambda_ = parameters['lambda'],
+17                             seed=42).train()
+18         writer.write(model=model, version=model_version)
+19     else:
+20         time.sleep(120)</pre></code>
+                      <p class="link-text">github.com/radanalyticsio/jiminy-modeler/app.py</p>
+                      <p class="hashtag">#devconfcz</p>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### Stream processing
+
+![](deck/stream-processing.svg) <!-- .element: class="pad-before-1 center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                  <section>
+                    <h4>Structured stream processing</h4>
+                    <div class="pad-before-1">
+                    <pre><code class="python hljs stylus" data-noescape> 1 spark = SparkSession.builder.appName("grafzahl").getOrCreate()
+ 2 spark \
+ 3   .readStream \
+ 4    .format("kafka") \
+ 5     .option("kafka.bootstrap.servers", servers) \
+ 6      .option("subscribe", topic) \
+ 7       .load() \
+ 8   .selectExpr("CAST(value AS STRING)") \
+ 9    .groupBy("value") \
+10     .count() \
+11   .writeStream \
+12    .outputMode("complete") \
+13     .<span class="fragment highlight-green">format</span>("memory") \
+14      .<span class="fragment highlight-green">queryName</span>("results") \
+15   .start()</pre></code>
+                    </div>
+                    <p class="link-text">github.com/radanalyticsio/grafzahl/app.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <h4>Structured stream processing</h4>
+                    <div class="pad-before-1">
+                    <pre><code class="python hljs stylus" data-noescape> 1 def top(request):
+ 2    results = spark.<span class="fragment highlight-green">sql</span>(
+ 3        "SELECT * FROM results ORDER BY count DESC LIMIT {}" \
+ 4          .format(int(request.args.get('n') or 10))) \
+ 5        .<span class="fragment highlight-green">collect</span>()
+ 6    return (map(lambda x: x.value, results),
+ 7            map(lambda x: x['count'], results))</pre></code>
+                    </div>
+                    <p class="link-text">github.com/radanalyticsio/grafzahl/app.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section data-markdown>
+                    <script type="text/template">
+#### Stream processing, kappa architecture
+
+![](deck/stream-processing-kappa.svg) <!-- .element: class="pad-before-1 center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                  <section>
+                    <h4>Stream processing, kappa architecture</h4>
+                    <pre><code class="python hljs stylus" data-noescape> 1 sc = pyspark.SparkContext(appName='word-filter')
+ 2 ssc = streaming.StreamingContext(sc, 3)
+ 3 kds = kstreaming.KafkaUtils.createDirectStream(
+ 4         ssc, [intopic], {'bootstrap.servers': servers})
+ 5 words = kds.<span class="fragment highlight-green">map</span>(lambda x: x[1])
+ 6 filterwords = words.<span class="fragment highlight-green">filter</span>(
+ 7     lambda x: False if re.search(regexp, x) is None else True)
+ 8
+ 9 def send_response(rdd):
+10     producer = kafka.KafkaProducer(bootstrap_servers=servers)
+11     for r in rdd.collect():
+12         producer.send(outtopic, str(r))
+13     producer.flush()
+14
+15 filterwords.pprint()
+16 filterwords.<span class="fragment highlight-green">foreachRDD</span>(send_response)
+17 ssc.start()
+18 ssc.awaitTermination()</pre></code>
+                    <p class="link-text">github.com/elmiko/word-filter/app.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section data-markdown>
+                    <script type="text/template">
+#### Kappa before it was cool
+
+![](deck/fedmsg-bus.png) <!-- .element: class="fragment pad-before-1 center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section data-markdown>
+                    <script type="text/template">
+#### Integrating Spark and OpenShift
+
+![](deck/oshinko-source-to-image.svg) <!-- .element: class="pad-before-1 center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                  <section data-markdown>
+                    <script type="text/template">
+#### Integrating Spark and OpenShift
+
+![](deck/oshinko-webui.svg) <!-- .element: class="pad-before-1 center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                  <section>
+                    <div class="frame frame-center">
+                      <h3>oshinko in action</h3>
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <section>
+                    <h4>Synchronicity</h4>
+                    <div class="frame-500">
+                      <img src="deck/synch-left.svg">
+                      <div class="frame-column center">
+                        <img src="deck/synch-center-1.svg" class="fragment">
+                        <img src="deck/synch-center-2.svg" class="fragment">
+                      </div>
+                      <img src="deck/synch-right.svg">
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <h4>Asynchronicity</h4>
+                    <div class="frame-500">
+                      <img src="deck/synch-left.svg">
+                      <div class="frame-column center">
+                        <img src="deck/synch-center-1.svg" class="fragment">
+                        <img src="deck/asynch-center-1.svg" class="fragment">
+                        <img src="deck/asynch-center-2.svg" class="fragment">
+                        <img src="deck/synch-center-2.svg" class="fragment">
+                      </div>
+                      <img src="deck/synch-right.svg">
+                    </div>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section data-markdown>
+                    <script type="text/template">
+#### Separate control and processing
+
+![](deck/synchronicity.svg) <!-- .element: class="pad-before-1 center frame-500" -->
+
+\#devconfcz <!-- .element: class="hashtag" -->
+                    </script>
+                  </section>
+                  <section>
+                    <h4>Separate control and processing</h4>
+                    <div class="pad-before-1">
+                    <pre><code class="python hljs stylus" data-noescape> 1 import multiprocessing as mp
+ 2 # queues for ipc with the prediction process
+ 3 request_q = mp.<span class="fragment highlight-green" data-fragment-index="1">Queue</span>()
+ 4 response_q = mp.<span class="fragment highlight-green" data-fragment-index="1">Queue</span>()
+ 5
+ 6 # start the prediction process
+ 7 process = mp.Process(target=predictions.loop,
+ 8                      <span class="fragment highlight-green">args=(request_q, response_q)</span>)
+ 9 process.start()
+10
+11 # waiting for processing loop to become active
+12 <span class="fragment highlight-green">response_q.get()</span></pre></code>
+                    </div>
+                    <p class="link-text">github.com/radanalyticsio/jiminy-predictor/app.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                  <section>
+                    <h4>Separate control and processing</h4>
+                    <div>
+                    <pre><code class="python hljs stylus" data-noescape> 1 def loop(request_q, response_q):
+ 2     spark = pysql.SparkSession.builder.appName("JiminyRec")\
+ 3             .getOrCreate()
+ 4     sc = spark.sparkContext
+ 5     # let the main process know we are ready to start
+ 6     response_q.<span class="fragment highlight-green" data-fragment-index="1">put</span>('ready')
+ 7     while True:
+ 8         req = request_q.<span class="fragment highlight-green" data-fragment-index="2">get</span>()
+ 9         if req == 'stop':
+10              break
+11          resp = req
+12          if 'topk' in req:
+13              # make rank predictions
+14              # ...
+15              response_q.<span class="fragment highlight-green" data-fragment-index="3">put</span>(resp)
+16          else:
+17              # make rating predictions
+18              # ...
+19              response_q.<span class="fragment highlight-green" data-fragment-index="3">put</span>(resp)</code></pre>
+                    </div>
+                    <p class="link-text">github.com/radanalyticsio/jiminy-predictor/predictions.py</p>
+                    <p class="hashtag">#devconfcz</p>
+                  </section>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <h4>Mind your dependencies</h4>
+                  <div>
+                    <pre><code class="python hljs stylus" data-noescape> 1 import sys
+ 2 import pymongo
+ 3 from pyspark.sql import SparkSession
+ 4
+ 5 def filter_evens(value):
+ 6     if value % 2 == 0:
+ 7         db = pymongo.<span class="fragment highlight-green" data-fragment-index="3">MongoClient</span>().evens
+ 8         doc = db.counts.find_one({"value": value})
+ 9         if doc is not None:
+10             count = doc["count"] + 1
+11             db.counts.replace_one({"_id": doc["_id"]},
+12                     {"value": value, "count": count})
+13         else:
+14             db.counts.insert_one({"value": value, "count": 1})
+15
+16 spark = SparkSession.builder.appName("simple").getOrCreate()
+17
+18 data = range(int(sys.argv[1]))
+19
+20 evens = spark.sparkContext.<span class="fragment highlight-green" data-fragment-index="1">parallelize</span>(data)\
+21          .<span class="fragment highlight-green" data-fragment-index="2">filter</span>(filter_evens)\
+22          .count() </pre></code>
+                  </div>
+                    <p class="hashtag">#devconfcz</p>
+                </section>
+
+				<section data-background-image="deck/transparent-textured-background.svg">
+                  <div class="flex frame-column">
+                  <div class="flex">
+                    <img src="deck/final-1.png" class="center border" width="400px">
+                    <img src="deck/final-2.png" class="center border" width="400px">
+                  </div>
+                  <div class="flex pad-before-1">
+                    <img src="deck/final-3.png" class="center border" width="400px">
+                    <img src="deck/qrcode.png" class="center" width="400px">
+                  </div>
+                  </div>
+<img src="deck/radanalytics.io.png" class="center pad-before-1" height="80px">
+
+
                   </script>
                 </section>
 
