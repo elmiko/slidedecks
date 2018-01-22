@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="54.009521mm"
+   height="45.148621mm"
+   viewBox="0 0 54.009523 45.14862"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="example-rdd.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="332.96149"
+     inkscape:cy="10.328636"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2552"
+     inkscape:window-height="1400"
+     inkscape:window-x="4"
+     inkscape:window-y="4"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0.4" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.3635187,23.53816)">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.45764446;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect817"
+       width="26.811699"
+       height="26.811699"
+       x="5.5923409"
+       y="-23.309338" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.45764446;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect817-6"
+       width="26.811701"
+       height="26.811701"
+       x="32.332516"
+       y="-23.309338" />
+    <g
+       aria-label="2"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16.93333244px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:'Overpass Heavy';letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       id="text860-6"
+       transform="translate(-26.740176,-35.555351)">
+      <path
+         d="m 41.623567,31.68013 h 8.229599 V 29.207863 H 44.6377 c 0.389466,-0.880533 1.016,-1.371599 2.607733,-2.319866 1.456267,-0.846667 2.506133,-1.710267 2.506133,-3.7592 0,-1.9304 -1.405466,-3.5052 -3.877733,-3.5052 -1.710266,0 -3.335866,0.9652 -4.064,2.5908 l 2.302934,1.032933 c 0.389466,-0.745066 1.015999,-1.185333 1.845733,-1.185333 0.778933,0 1.253066,0.3556 1.253066,1.1684 0,0.8128 -0.745066,1.286933 -1.524,1.710267 -2.302933,1.27 -4.063999,3.0988 -4.063999,6.739466 z"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16.93333244px;font-family:Overpass;-inkscape-font-specification:'Overpass Heavy';stroke-width:0.26458332"
+         id="path2203"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       aria-label="4"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16.93333244px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:'Overpass Heavy';letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       id="text860-2"
+       transform="translate(-53.480359,-35.65695)">
+      <path
+         d="m 100.32786,31.68013 h 2.4892 v -2.201333 h 1.38853 v -2.3876 h -1.38853 v -7.2644 h -2.52307 l -6.06213,8.0264 v 1.6256 h 6.096 z m 0,-4.588933 h -2.760134 l 2.760134,-3.7592 z"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16.93333244px;font-family:Overpass;-inkscape-font-specification:'Overpass Heavy';stroke-width:0.26458332"
+         id="path2197"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
