@@ -1,6 +1,6 @@
 #rht-cover-logo {
     position: absolute;
-    top: 0;
+    top: -200px;
     right: 0;
     height: 64px;
     background: rgba(0,0,0,0);
@@ -32,8 +32,14 @@ section#cover h4
 }
 
 #cover-title {
-    padding-top: 150px;
+/*    padding-top: 200px;*/
     color: white;
+    text-align: center;
+}
+
+.reveal section img {
+    border: 0;
+    box-shadow: 0 0 0;
 }
 
 section img.rhtlogo {
@@ -41,10 +47,19 @@ section img.rhtlogo {
     top: 600px;
     right: 0;
     height: 40px;
-    border: 0;
-    box-shadow: 0 0 0;
 }
 
-section {
-    text-align: left;
+section .pad-top {
+    padding-top: 50px;
+}
+
+section .code span {
+    background: #dedede;
+    font-family: monospace;
+    font-size: .75em;
+}
+
+section .code a:hover,
+section .code a {
+    color: black;
 }

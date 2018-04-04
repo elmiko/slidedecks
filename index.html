@@ -29,21 +29,161 @@
                   <script type="text/template">
 ![Red Hat Logo](deck/redhat-logo-reverse.svg) <!-- .element: id="rht-cover-logo" -->
 
-## Title <!-- .element: id="cover-title" -->
-#### Sub-Title
-
-Presenter Name <!-- .element id="cover-name" -->
-
-Date
+## Apache Spark on OpenShift with radanalytics.io <!-- .element: id="cover-title" -->
                   </script>
                 </section>
+
 				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
                   <script type="text/template">
-# Slide 2
+## What is radanalytics.io?
 
-A list of bullet points
-* Item 1
-* Item 2
+An open source community working to empower intelligent application lifecycles on OpenShift <!-- .element: class="pad-top" -->
+
+A collection of projects to enable analytics and machine learning frameworks
+on OpenShift <!-- .element: class="pad-top" -->
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## radanalytics.io Quickstart
+
+To get started using the radanalytics.io projects, simply install the resource
+manifest into your OpenShift project <!-- .element: class="pad-top" -->
+
+<div class="code pad-top"><span>oc create -f https://radanalytics.io/resources.yaml</span></div>
+
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Project Oshinko
+
+Deploy and manage Apache Spark clusters on OpenShift through browser and
+command line tooling<!-- .element: class="pad-top" -->
+
+Utilize source-to-image based repositories to automatically deploy ephemeral
+Apache Spark clusters alongside your applications<!-- .element: class="pad-top" -->
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Oshinko WebUI
+
+![oshinko webui arch](deck/oshinko-webui-arch.svg) <!-- .element: height="400px" class="pad-top" -->
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Deploying Oshinko WebUI
+
+The oshinko-webui application can be deployed by selecting it from the
+application catalog for your project, or by running the following command<!-- .element: class="pad-top" -->
+
+<div class="code pad-top"><span>oc new-app oshinko-webui</span></div>
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Oshinko CLI
+
+![oshinko cli arch](deck/oshinko-cli-arch.svg) <!-- .element: height="400px" class="pad-top" -->
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Downloading Oshinko CLI
+
+Static binaries for the oshinko-cli tool are available for Linux
+i386, Linux x86_64, and OSX compatible systems. Releases can be found at the
+following address<!--.element: class="pad-top" -->
+
+<div><a href="https://github.com/radanalyticsio/oshinko-cli/releases">github.com/radanalyticsio/oshinko-cli/releases</a></div><!--.element: class="pad-top" -->
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Oshinko Source-to-Image
+
+![oshinko s2i arch](deck/oshinko-s2i-arch.svg) <!-- .element: height="400px" class="pad-top" -->
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Using Oshinko S2I
+
+Oshinko source-to-image functionality is available through three language
+specific templates<!-- .element: class="pad-top" -->
+
+
+<div class="code"><strong>Java</strong><br/>
+<span>oshinko-java-spark-build-dc</span></div>
+
+<div class="code"><strong>Python</strong><br/>
+<span>oshinko-python-spark-build-dc</span></div>
+
+<div class="code"><strong>Scala</strong><br/>
+<span>oshinko-scala-spark-build-dc</span></div>
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## Oshinko S2I Examples
+
+<div class="pad-top"><strong>Java</strong><br/>
+<a href="https://github.com/radanalyticsio/tutorial-sparkpi-java-spring">github.com/radanalyticsio/tutorial-sparkpi-java-spring</a></div>
+
+<div class="pad-top"><strong>Python</strong><br/>
+<a href="github.com/radanalyticsio/tutorial-sparkpi-python-flask">github.com/radanalyticsio/tutorial-sparkpi-python-flask</a></div>
+
+<div class="pad-top"><strong>Scala</strong><br/>
+<a href="github.com/radanalyticsio/tutorial-sparkpi-scala-akka">github.com/radanalyticsio/tutorial-sparkpi-scala-akka</a></div>
+
+![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
+                  </script>
+                </section>
+
+				<section data-markdown data-background-image="deck/transparent-textured-background.svg">
+                  <script type="text/template">
+## References
+
+**Installing and running radanalytics.io projects**
+
+<a href="https://radanalytics.io/get-started">radanalytics.io/get-started</a>
+
+**Source-to-image examples**
+
+<a href="https://radanalytics.io/my-first-radanalytics-app.html">radanalytics.io/my-first-radanalytics-app</a>
+
+**Example applications**
+
+<a href="https://radanalytics.io/tutorials">radanalytics.io/tutorials</a>
 
 ![Red Hat Logo](deck/redhat-logo.svg) <!-- .element: class="rhtlogo" -->
                   </script>
@@ -64,7 +204,6 @@ A list of bullet points
 
                 controls: false,
                 slideNumber: true,
-                center: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
