@@ -1,0 +1,67 @@
+body .reveal {
+    font-family: overpass, sans-serif;
+}
+
+section#cover h1 {
+    font-size: 225%;
+}
+
+section#cover h1,
+section#cover h3 {
+    color: white;
+}
+
+.reveal section img {
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+.reveal p.quote {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.reveal p.attribution {
+    font-size: 1vw;
+}
+
+.reveal p.code {
+    font-family: monospace;
+    font-weight: 600;
+    background: #dedede;
+}
+
+.reveal span.code {
+    font-family: monospace;
+    background: #dedede;
+}
+
+.reveal div.code-block {
+    font-family: monospace;
+    background: #dedede;
+    font-size: 80%;
+}
+
+.reveal section h1.white-header,
+.reveal section h2.white-header {
+    color: white;
+}
+
+.reveal pre {
+    box-shadow: 0 0 0;
+    margin: 1em;
+}
+
+.reveal section div#horizon,
+.reveal section div#runtimes {
+    font-size: 75%;
+}
+
+.reveal section div#recap {
+    font-size: 75%;
+    text-align: left
+}
+
+.reveal section strong.bigger {
+    font-size: 200%;
+}

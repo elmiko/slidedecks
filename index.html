@@ -1,49 +1,298 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="deck/overpass-webfont/overpass.css">
+    <link rel="stylesheet" href="deck/main.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="cover" data-background-image="deck/purple-background.png">
+          <h1>What is Kubernetes</h1>
+          <h3>and Why Should You Care?</h3>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section data-background-image="deck/containers.jpg">
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section data-background-image="deck/white-background.png">
+          <h2>Linux Kernel</h2>
+          <ul>
+            <li class="fragment">Namespaces</li>
+            <li class="fragment">Capabilities</li>
+            <li class="fragment">Virtual File Systems</li>
+          </ul>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Processes</h2>
+          <img src="deck/containers-1.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Container Processes</h2>
+          <img src="deck/containers-2.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Container Orchestration</h2>
+          <img src="deck/orchestration.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Scheduling</h2>
+          <img src="deck/scheduling.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Routing</h2>
+          <img src="deck/routing.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Lifecycle</h2>
+          <img src="deck/lifecycle.svg">
+        </section>
+
+        <section data-background-image="deck/purple-background.png">
+          <h2 class="smaller white-header">Kubernetes Deep Dive</h2>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <p class="quote">κῠβερνήτης • (kubernḗtēs) • <strong>Noun</strong></p>
+          <ol>
+            <li>a captain, a steersman, a pilot, a navigator</li>
+            <li>(figuratively) a guide</li>
+          </ol>
+          <img width="200px" src="deck/kubernetes-logo.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <img src="deck/cncf.png"><br/>
+          <strong> <a href="https://www.cncf.io">www.cncf.io</a></strong>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Basic Architecture</h2>
+          <img src="deck/kubernetes-arch.png">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Objects</h2>
+          <img src="deck/kubernetes-objects.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Declarative API</h2>
+          <div class="code-block"><pre>
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-example
+  spec:
+    containers:
+      - name: fedora
+        image: fedora:28
+        command: ["echo"]
+        args: ["Hello World"]
+          </pre></div>
+        </section>
+
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Command Line Ease</h2>
+          <div class="code-block"><pre>
+
+$ kubectl get all
+NAME                     DESIRED   CURRENT   AGE
+statefulsets/kafka       3         3         2d
+statefulsets/zookeeper   1         1         2d
+
+NAME             READY     STATUS    RESTARTS   AGE
+po/kafka-0       1/1       Running   2          2d
+po/kafka-1       1/1       Running   0          2d
+po/kafka-2       1/1       Running   0          2d
+po/zookeeper-0   1/1       Running   0          2d
+
+NAME                     TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
+svc/kafka                ClusterIP   172.30.159.88   none          9092/TCP                     2d
+svc/kafka-headless       ClusterIP   None            none          9092/TCP                     2d
+svc/zookeeper            ClusterIP   172.30.4.44     none          2181/TCP                     2d
+svc/zookeeper-headless   ClusterIP   None            none          2181/TCP,2888/TCP,3888/TCP   2d
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Labels and Selectors</h2>
+          <div class="code-block"><pre>
+
+$ kubectl describe svc/kafka
+Name:              kafka
+Namespace:         kafka
+Labels:            app=strimzi
+Annotations:       openshift.io/generated-by=OpenShiftNewApp
+Selector:          name=kafka
+Type:              ClusterIP
+IP:                172.30.159.88
+Port:              kafka  9092/TCP
+TargetPort:        9092/TCP
+Endpoints:         172.17.0.4:9092,172.17.0.7:9092,172.17.0.8:9092
+Session Affinity:  None
+Events:            <none>
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ kubectl get all -l name=kafka
+NAME                 DESIRED   CURRENT   AGE
+statefulsets/kafka   3         3         2d
+
+NAME         READY     STATUS    RESTARTS   AGE
+po/kafka-0   1/1       Running   2          2d
+po/kafka-1   1/1       Running   0          2d
+po/kafka-2   1/1       Running   0          2d
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/purple-background.png">
+          <h2 class="smaller white-header">Why Should You Care?</h2>
+        </section>
+
+        <section data-background-image="deck/monorail.jpg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <img src="deck/kubernetes-popularity.png">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Infrastructure</h2>
+          <img src="deck/infrastructure.png">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Collaboration</h2>
+          <img width="700px" src="deck/collaboration.png">
+        </section>
+
+        <section data-transition="fade-out" data-background-image="deck/white-background.png">
+          <h2>Traditional Perspective</h2>
+          <img src="deck/microservices-1.svg">
+        </section>
+
+        <section data-transition="fade-in" data-background-image="deck/white-background.png">
+          <h2>Microservice Evolution</h2>
+          <img src="deck/microservices-2.svg">
+        </section>
+
+        <section data-transition="fade-in" data-background-image="deck/white-background.png">
+          <h2>Scaling</h2>
+          <img src="deck/microservices-3.svg">
+        </section>
+
+        <section data-transition="fade-in" data-background-image="deck/white-background.png">
+          <h2>Flexibility</h2>
+          <img src="deck/microservices-4.svg">
+        </section>
+
+        <section data-transition="fade-in slide-out" data-background-image="deck/white-background.png">
+          <h2>Health</h2>
+          <img src="deck/microservices-5.svg">
+        </section>
+
+        <section data-background-image="deck/purple-background.png">
+          <h1 class="white-header">Case Study</h1>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Architecture</h2>
+          <img src="deck/case-study.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Workflow</h2>
+          <img src="deck/workflow.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Demo</h2>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <div id="horizon">
+            <strong class="bigger">Minikube</strong></br>
+            <a href="https://kubernetes.io/docs/getting-started-guides/minikube/">kubernetes.io/docs/getting-started-guides/minikube/</a>
+            </br>
+            </br>
+            <strong class="bigger">OpenShift Origin</strong></br>
+            <a href="https://docs.openshift.org/latest/getting_started/administrators.html">docs.openshift.org/latest/getting_started/administrators.html</a>
+          </div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Other Fish</h2>
+          <div id="horizon">
+          Mesos &#8226; <a href="https://mesos.apache.org/">mesos.apache.org</a></br>
+          Titus &#8226; <a href="https://netflix.github.io/titus/">netflix.github.io/titus</a></br>
+          Docker Swarm &#8226; <a href="https://github.com/docker/swarm/">github.com/docker/swarm</a></br>
+          </div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Recap</h2>
+          <div id="recap">
+          Kubernetes &#8226; <a href="https://kubernetes.io/">kubernetes.io</a></br>
+          OpenShift &#8226; <a href="https://www.openshift.org/">www.openshift.org</a></br>
+          Cloud Native Computing Foundation &#8226; <a href="https://cncf.io">www.cncf.io</a></br>
+          </br>
+          <strong>This presentation</strong></br>
+          <a href="https://github.com/elmiko/slidedecks/tree/2018/penguicon-kubernetes">github.com/elmiko/slidedecks/tree/2018/penguicon-kubernetes</a></br>
+          </br>
+          <strong>Stay in touch!</strong></br>
+          Michael McCune</br>
+          Twitter &#8226; @FOSSjunkie</br>
+          <a href="https://elmiko.github.io">elmiko.github.io</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+  controls: false,
+  dependencies: [
+    { src: 'plugin/markdown/marked.js' },
+    { src: 'plugin/markdown/markdown.js' },
+    { src: 'plugin/notes/notes.js', async: true },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ],
+  history: true
+});
+    </script>
+  </body>
 </html>
