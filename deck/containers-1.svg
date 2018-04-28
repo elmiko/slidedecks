@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="730.5719"
+   height="292.04568"
+   viewBox="0 0 193.29715 77.270421"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="containers-1.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5291"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5424"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5422"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5179"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5173"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5161"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutL"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5288"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5167"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5149"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5291-5"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-4-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5291-5-2"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="200.30728"
+     inkscape:cy="211.8482"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1060"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.1589106,-145.20653)">
+    <rect
+       style="fill:#004153;stroke-width:0.78028911;stroke-dasharray:2.3408672, 2.3408672"
+       id="rect4267"
+       width="99.117027"
+       height="59.155838"
+       x="7.4818273"
+       y="146.52945"
+       ry="1.4173653" />
+    <rect
+       style="fill:#dcdcdc;stroke-width:0.64294469;stroke-dasharray:1.92883409, 1.92883409000000006"
+       id="rect4267-3"
+       width="91.39183"
+       height="15.195537"
+       x="11.344427"
+       y="149.44234"
+       ry="0.96231663" />
+    <g
+       aria-label="$SPARK_HOME/bin/spark-class \   org.apache.spark.deploy.worker.Worker \   master:7077"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+       id="text4288"
+       transform="translate(-4.5755446,-13.186291)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 18.11067,167.51707 h 0.356306 v -0.30692 c 0.363361,-0.0529 0.627944,-0.29986 0.627944,-0.70555 0,-0.50447 -0.384527,-0.68439 -0.712611,-0.81139 -0.246944,-0.0988 -0.469194,-0.19756 -0.469194,-0.4057 0,-0.17286 0.127,-0.27869 0.345722,-0.27869 0.211667,0 0.345722,0.11289 0.402167,0.25047 l 0.328083,-0.10936 c -0.0635,-0.22578 -0.243417,-0.40569 -0.522111,-0.46214 v -0.28222 H 18.11067 v 0.27869 c -0.366888,0.0565 -0.5715,0.31398 -0.5715,0.60678 0,0.44803 0.366889,0.60678 0.691445,0.73378 0.261055,0.10231 0.493889,0.22931 0.493889,0.48331 0,0.24694 -0.162278,0.37394 -0.41275,0.37394 -0.239889,0 -0.426861,-0.14817 -0.522111,-0.36689 l -0.331611,0.12347 c 0.09525,0.28222 0.324555,0.50095 0.652638,0.56445 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4443" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 20.471581,167.22426 c 0.430388,0 0.779638,-0.26105 0.779638,-0.71966 0,-0.44803 -0.381,-0.65264 -0.684388,-0.79375 -0.250473,-0.11289 -0.483306,-0.20814 -0.483306,-0.41275 0,-0.17992 0.141111,-0.29281 0.342194,-0.29281 0.1905,0 0.328084,0.11642 0.388056,0.254 l 0.328083,-0.10936 c -0.07761,-0.27517 -0.342194,-0.47978 -0.6985,-0.47978 -0.448027,0 -0.726722,0.28575 -0.726722,0.62795 0,0.41275 0.356306,0.58914 0.66675,0.72672 0.264583,0.11642 0.500945,0.26106 0.500945,0.49036 0,0.24342 -0.155223,0.37042 -0.388056,0.37042 -0.232833,0 -0.426861,-0.1517 -0.525639,-0.37395 l -0.335139,0.12348 c 0.119945,0.34219 0.440972,0.58913 0.836084,0.58913 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4445" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 21.83413,167.18193 h 0.363361 v -0.96661 h 0.455083 c 0.585611,0 0.811389,-0.40569 0.811389,-0.75142 0,-0.37041 -0.204611,-0.75141 -0.811389,-0.75141 H 21.83413 Z m 0.363361,-1.30175 v -0.83255 h 0.47625 c 0.331611,0 0.423333,0.23988 0.423333,0.41627 0,0.19756 -0.109361,0.41628 -0.423333,0.41628 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4447" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 25.380373,167.18193 h 0.384528 l -0.814917,-2.46944 h -0.328083 l -0.807861,2.46944 h 0.388055 l 0.172861,-0.57503 h 0.829028 z m -0.903111,-0.90311 0.246944,-0.81844 c 0.01764,-0.0564 0.04939,-0.17992 0.0635,-0.25753 0.01411,0.0776 0.04586,0.20108 0.0635,0.25753 l 0.250473,0.81844 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4449" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 27.773033,165.43568 c 0,-0.36689 -0.186972,-0.72319 -0.79375,-0.72319 H 26.17495 v 2.46944 h 0.363361 v -1.01247 h 0.331611 l 0.493889,1.01247 h 0.402167 l -0.511528,-1.04775 c 0.359833,-0.1023 0.518583,-0.40217 0.518583,-0.6985 z m -1.234722,-0.38805 h 0.448028 c 0.335139,0 0.423333,0.21872 0.423333,0.39511 0,0.19402 -0.102305,0.38805 -0.423333,0.38805 h -0.448028 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4451" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 29.650638,167.18193 h 0.416278 l -0.85725,-1.59808 0.6985,-0.87136 H 29.48836 l -0.779639,0.99483 v -0.99483 H 28.34536 v 2.46944 h 0.363361 v -0.97014 l 0.257528,-0.32103 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4453" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 30.353492,167.80635 h 1.890889 v -0.31045 h -1.890889 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4455" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 32.68618,167.18193 h 0.363361 v -1.10772 h 0.843139 v 1.10772 h 0.359834 v -2.46944 H 33.89268 v 1.01952 h -0.843139 v -1.01952 H 32.68618 Z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4457" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 35.639757,167.22426 c 0.642056,0 0.889,-0.63147 0.889,-1.27705 0,-0.64558 -0.246944,-1.27706 -0.889,-1.27706 -0.638528,0 -0.889,0.63148 -0.889,1.27706 0,0.64558 0.250472,1.27705 0.889,1.27705 z m 0,-0.34219 c -0.366889,0 -0.511528,-0.4445 -0.511528,-0.93486 0,-0.45861 0.144639,-0.93839 0.511528,-0.93839 0.370417,0 0.515056,0.4445 0.515056,0.93839 0,0.45861 -0.148167,0.93486 -0.515056,0.93486 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4459" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 37.027001,167.18193 h 0.321027 v -1.44639 c 0,-0.0494 -0.0035,-0.15169 -0.0071,-0.21166 0.02117,0.0741 0.04233,0.14111 0.05997,0.21166 l 0.388056,1.44639 h 0.04233 l 0.388056,-1.44639 c 0.02117,-0.0705 0.03881,-0.13758 0.05997,-0.21166 -0.0071,0.06 -0.0071,0.16227 -0.0071,0.21166 v 1.44639 h 0.321028 v -2.46944 H 38.24046 l -0.370416,1.41464 c -0.02822,0.0952 -0.04586,0.17991 -0.05644,0.25047 -0.01058,-0.0706 -0.03175,-0.15522 -0.05644,-0.25047 l -0.363361,-1.41464 h -0.366889 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4461" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 39.197411,167.18193 h 1.591028 v -0.34572 h -1.227667 v -0.75847 H 40.3263 v -0.3422 h -0.765528 v -0.68086 h 1.150055 v -0.34219 h -1.513416 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4463" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 41.279627,167.64054 h 0.356305 l 1.386417,-2.97039 h -0.356306 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4465" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 44.406064,167.22426 c 0.469195,0 0.762,-0.33514 0.762,-0.94544 0,-0.58914 -0.313972,-0.94192 -0.765527,-0.94192 -0.183445,0 -0.373945,0.0811 -0.479778,0.19403 v -0.89605 l -0.352778,0.1658 v 2.38125 h 0.352778 v -0.14817 c 0.105833,0.10584 0.246944,0.1905 0.483305,0.1905 z m -0.05644,-0.33161 c -0.186972,0 -0.335139,-0.0811 -0.426861,-0.21519 v -0.79728 c 0.0635,-0.0952 0.215194,-0.21167 0.426861,-0.21167 0.303389,0 0.458611,0.2152 0.458611,0.61031 0,0.37747 -0.148167,0.61383 -0.458611,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4467" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 46.52003,165.08643 c 0.123472,0 0.215195,-0.0952 0.215195,-0.21519 0,-0.11995 -0.09172,-0.2152 -0.215195,-0.2152 -0.119944,0 -0.215194,0.0953 -0.215194,0.2152 0,0.11994 0.09525,0.21519 0.215194,0.21519 z m 0.176389,1.78153 v -1.48872 h -0.850194 v 0.31044 h 0.497416 v 1.17828 h -0.497416 v 0.31397 h 1.347611 v -0.31397 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4469" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 48.757468,165.3369 c -0.239889,0 -0.437444,0.11289 -0.525639,0.26106 v -0.21872 h -0.328083 v 1.80269 h 0.352778 v -1.05128 c 0,-0.3563 0.183444,-0.46214 0.419805,-0.46214 0.22225,0 0.395111,0.11995 0.395111,0.4692 v 1.04422 h 0.352778 v -1.06892 c 0,-0.56797 -0.275167,-0.77611 -0.66675,-0.77611 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4471" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 49.961267,167.64054 h 0.356306 l 1.386416,-2.97039 h -0.356305 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4473" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 53.003038,167.22426 c 0.409223,0 0.677334,-0.19402 0.677334,-0.52211 0,-0.35983 -0.313972,-0.47625 -0.613834,-0.59266 -0.211666,-0.0847 -0.409222,-0.15875 -0.409222,-0.28575 0,-0.11642 0.130528,-0.18345 0.321028,-0.18345 0.211667,0 0.338667,0.0917 0.430389,0.17286 l 0.232833,-0.19402 c -0.141111,-0.16228 -0.359833,-0.28223 -0.649111,-0.28223 -0.373944,0 -0.66675,0.17992 -0.66675,0.48331 0,0.31397 0.254,0.42686 0.578556,0.56092 0.246944,0.1023 0.4445,0.17286 0.4445,0.32808 0,0.14464 -0.144639,0.21166 -0.321028,0.21166 -0.218722,0 -0.395111,-0.12347 -0.490361,-0.22577 l -0.236361,0.20814 c 0.151694,0.1905 0.409222,0.32102 0.702027,0.32102 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4475" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 54.422032,167.89454 0.352778,-0.1658 v -0.70556 c 0.09525,0.11289 0.232833,0.20108 0.469194,0.20108 0.451556,0 0.783167,-0.34572 0.783167,-0.94544 0,-0.58914 -0.306917,-0.94192 -0.786695,-0.94192 -0.225777,0 -0.363361,0.0847 -0.465666,0.18698 v -0.14464 h -0.352778 z m 0.772583,-1.00189 c -0.197555,0 -0.331611,-0.0988 -0.419805,-0.21519 v -0.79728 c 0.08819,-0.13405 0.225777,-0.21167 0.41275,-0.21167 0.310444,0 0.479777,0.23989 0.479777,0.61031 0,0.39511 -0.172861,0.61383 -0.472722,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4477" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 57.216859,167.22426 c 0.232833,0 0.402166,-0.0882 0.515055,-0.19755 v 0.15522 h 0.342195 v -1.18533 c 0,-0.56445 -0.377472,-0.6597 -0.677334,-0.6597 -0.28575,0 -0.546805,0.0988 -0.712611,0.20461 l 0.105834,0.28928 c 0.162277,-0.1023 0.373944,-0.18697 0.575027,-0.18697 0.211667,0 0.366889,0.0847 0.366889,0.36336 v 0.12347 c -0.141111,-0.0741 -0.28575,-0.10583 -0.469194,-0.10583 -0.352778,0 -0.705556,0.17992 -0.705556,0.59619 0,0.39864 0.282223,0.60325 0.659695,0.60325 z m 0.05644,-0.31044 c -0.239889,0 -0.377472,-0.11642 -0.377472,-0.29281 0,-0.20461 0.194028,-0.29633 0.419806,-0.29633 0.15875,0 0.310444,0.0459 0.416277,0.10583 v 0.27164 c -0.09878,0.10584 -0.246944,0.21167 -0.458611,0.21167 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4479" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 59.969352,165.3369 c -0.261055,0 -0.532694,0.12348 -0.649111,0.33867 v -0.29633 H 58.60763 v 0.31044 h 0.377472 v 1.17828 H 58.60763 v 0.31397 h 1.252361 v -0.31397 h -0.515055 v -0.67733 c 0,-0.34573 0.264583,-0.51859 0.613833,-0.51859 0.02469,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345722 v -0.64558 c -0.09172,-0.0529 -0.225777,-0.0917 -0.409222,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4481" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 62.118596,167.18193 h 0.388055 l -0.66675,-1.29822 0.508,-0.50447 h -0.416277 l -0.645584,0.65616 v -1.40052 l -0.352778,0.1658 v 2.38125 h 0.352778 v -0.74789 l 0.299861,-0.29633 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4483" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 63.026061,166.30351 h 1.658056 v -0.33866 h -1.658056 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4485" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 66.064305,167.22426 c 0.373944,0 0.624417,-0.17639 0.723194,-0.49389 l -0.331611,-0.10583 c -0.05644,0.16933 -0.186972,0.26811 -0.388055,0.26811 -0.28575,0 -0.437445,-0.2293 -0.437445,-0.6103 0,-0.37395 0.148167,-0.61384 0.448028,-0.61384 0.194028,0 0.306917,0.0988 0.363361,0.23637 l 0.331611,-0.11642 c -0.109361,-0.30339 -0.352778,-0.45156 -0.694972,-0.45156 -0.497417,0 -0.811389,0.35631 -0.811389,0.94545 0,0.59619 0.310445,0.94191 0.797278,0.94191 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4487" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 68.372298,166.86796 v -2.23308 h -0.941916 l 0.162278,0.31044 h 0.426861 v 1.92264 h -0.518584 v 0.31397 h 1.386417 v -0.31397 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4489" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 70.23932,167.22426 c 0.232833,0 0.402166,-0.0882 0.515055,-0.19755 v 0.15522 h 0.342195 v -1.18533 c 0,-0.56445 -0.377473,-0.6597 -0.677334,-0.6597 -0.28575,0 -0.546805,0.0988 -0.712611,0.20461 l 0.105834,0.28928 c 0.162277,-0.1023 0.373944,-0.18697 0.575027,-0.18697 0.211667,0 0.366889,0.0847 0.366889,0.36336 v 0.12347 c -0.141111,-0.0741 -0.28575,-0.10583 -0.469194,-0.10583 -0.352778,0 -0.705556,0.17992 -0.705556,0.59619 0,0.39864 0.282222,0.60325 0.659695,0.60325 z m 0.05644,-0.31044 c -0.239889,0 -0.377472,-0.11642 -0.377472,-0.29281 0,-0.20461 0.194028,-0.29633 0.419805,-0.29633 0.15875,0 0.310445,0.0459 0.416278,0.10583 v 0.27164 c -0.09878,0.10584 -0.246944,0.21167 -0.458611,0.21167 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4491" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 72.53673,167.22426 c 0.409222,0 0.677333,-0.19402 0.677333,-0.52211 0,-0.35983 -0.313972,-0.47625 -0.613833,-0.59266 -0.211667,-0.0847 -0.409222,-0.15875 -0.409222,-0.28575 0,-0.11642 0.130527,-0.18345 0.321027,-0.18345 0.211667,0 0.338667,0.0917 0.430389,0.17286 l 0.232834,-0.19402 c -0.141111,-0.16228 -0.359834,-0.28223 -0.649111,-0.28223 -0.373945,0 -0.66675,0.17992 -0.66675,0.48331 0,0.31397 0.254,0.42686 0.578555,0.56092 0.246945,0.1023 0.4445,0.17286 0.4445,0.32808 0,0.14464 -0.144639,0.21166 -0.321028,0.21166 -0.218722,0 -0.395111,-0.12347 -0.490361,-0.22577 l -0.236361,0.20814 c 0.151695,0.1905 0.409222,0.32102 0.702028,0.32102 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4493" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 74.70714,167.22426 c 0.409222,0 0.677333,-0.19402 0.677333,-0.52211 0,-0.35983 -0.313972,-0.47625 -0.613833,-0.59266 -0.211667,-0.0847 -0.409222,-0.15875 -0.409222,-0.28575 0,-0.11642 0.130528,-0.18345 0.321028,-0.18345 0.211666,0 0.338666,0.0917 0.430388,0.17286 l 0.232834,-0.19402 c -0.141111,-0.16228 -0.359834,-0.28223 -0.649111,-0.28223 -0.373945,0 -0.66675,0.17992 -0.66675,0.48331 0,0.31397 0.254,0.42686 0.578555,0.56092 0.246945,0.1023 0.4445,0.17286 0.4445,0.32808 0,0.14464 -0.144639,0.21166 -0.321028,0.21166 -0.218722,0 -0.395111,-0.12347 -0.490361,-0.22577 l -0.236361,0.20814 c 0.151695,0.1905 0.409222,0.32102 0.702028,0.32102 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4495" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 79.640627,167.64054 h 0.356306 l -1.386417,-2.97039 H 78.25421 Z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4497" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 22.617296,171.63399 c 0.522111,0 0.853722,-0.35984 0.853722,-0.94545 0,-0.58208 -0.331611,-0.94192 -0.853722,-0.94192 -0.522111,0 -0.853722,0.36337 -0.853722,0.94545 0,0.58561 0.331611,0.94192 0.853722,0.94192 z m 0,-0.33162 c -0.321028,0 -0.493889,-0.23988 -0.493889,-0.6103 0,-0.38453 0.172861,-0.61383 0.493889,-0.61383 0.324556,0 0.497417,0.23988 0.497417,0.6103 0,0.37395 -0.179917,0.61383 -0.497417,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4499" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 25.24279,169.74662 c -0.261056,0 -0.532695,0.12348 -0.649111,0.33867 v -0.29633 h -0.712611 v 0.31044 h 0.377472 v 1.17828 h -0.377472 v 0.31397 h 1.252361 v -0.31397 h -0.515056 v -0.67733 c 0,-0.34573 0.264583,-0.51859 0.613833,-0.51859 0.02469,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345722 v -0.64558 c -0.09172,-0.0529 -0.225778,-0.0917 -0.409222,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4501" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 26.8417,172.3219 c 0.560917,-0.0353 0.846667,-0.25753 0.846667,-0.86783 v -1.66511 h -0.352778 v 0.13053 c -0.07761,-0.0811 -0.211667,-0.17287 -0.4445,-0.17287 -0.448028,0 -0.762,0.35278 -0.762,0.94192 0,0.62795 0.338666,0.94545 0.754944,0.94545 0.204611,0 0.345722,-0.0635 0.451556,-0.19403 v 0.1658 c 0,0.254 -0.141111,0.39159 -0.677334,0.42686 z m 0.105833,-1.01953 c -0.282222,0 -0.458611,-0.23636 -0.458611,-0.61383 0,-0.39511 0.15875,-0.6103 0.458611,-0.6103 0.165806,0 0.310445,0.0882 0.388056,0.21166 v 0.79022 c -0.08467,0.14112 -0.225778,0.22225 -0.388056,0.22225 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4503" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 29.128527,171.63751 c 0.148166,0 0.261055,-0.11641 0.261055,-0.25752 0,-0.13759 -0.112889,-0.25753 -0.261055,-0.25753 -0.148167,0 -0.261056,0.11994 -0.261056,0.25753 0,0.14111 0.112889,0.25752 0.261056,0.25752 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4505" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 31.171937,171.63399 c 0.232833,0 0.402167,-0.0882 0.515055,-0.19756 v 0.15522 h 0.342195 v -1.18533 c 0,-0.56445 -0.377472,-0.6597 -0.677333,-0.6597 -0.28575,0 -0.546806,0.0988 -0.712612,0.20462 l 0.105834,0.28927 c 0.162278,-0.1023 0.373944,-0.18697 0.575028,-0.18697 0.211666,0 0.366888,0.0847 0.366888,0.36336 v 0.12347 c -0.141111,-0.0741 -0.28575,-0.10583 -0.469194,-0.10583 -0.352778,0 -0.705556,0.17992 -0.705556,0.5962 0,0.39863 0.282223,0.60325 0.659695,0.60325 z m 0.05644,-0.31045 c -0.239889,0 -0.377472,-0.11642 -0.377472,-0.2928 0,-0.20462 0.194028,-0.29634 0.419806,-0.29634 0.15875,0 0.310444,0.0459 0.416277,0.10584 v 0.27163 c -0.09878,0.10584 -0.246944,0.21167 -0.458611,0.21167 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4507" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 32.71793,172.30426 0.352778,-0.1658 v -0.70556 c 0.09525,0.11289 0.232833,0.20109 0.469195,0.20109 0.451555,0 0.783166,-0.34573 0.783166,-0.94545 0,-0.58914 -0.306916,-0.94192 -0.786694,-0.94192 -0.225778,0 -0.363361,0.0847 -0.465667,0.18698 v -0.14464 H 32.71793 Z m 0.772584,-1.00189 c -0.197556,0 -0.331611,-0.0988 -0.419806,-0.21519 v -0.79728 c 0.08819,-0.13405 0.225778,-0.21166 0.41275,-0.21166 0.310445,0 0.479778,0.23988 0.479778,0.6103 0,0.39511 -0.172861,0.61383 -0.472722,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4509" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 35.512757,171.63399 c 0.232834,0 0.402167,-0.0882 0.515056,-0.19756 v 0.15522 h 0.342194 v -1.18533 c 0,-0.56445 -0.377472,-0.6597 -0.677333,-0.6597 -0.28575,0 -0.546806,0.0988 -0.712611,0.20462 l 0.105833,0.28927 c 0.162278,-0.1023 0.373945,-0.18697 0.575028,-0.18697 0.211667,0 0.366889,0.0847 0.366889,0.36336 v 0.12347 c -0.141111,-0.0741 -0.28575,-0.10583 -0.469195,-0.10583 -0.352777,0 -0.705555,0.17992 -0.705555,0.5962 0,0.39863 0.282222,0.60325 0.659694,0.60325 z m 0.05644,-0.31045 c -0.239889,0 -0.377473,-0.11642 -0.377473,-0.2928 0,-0.20462 0.194028,-0.29634 0.419806,-0.29634 0.15875,0 0.310444,0.0459 0.416278,0.10584 v 0.27163 c -0.09878,0.10584 -0.246945,0.21167 -0.458611,0.21167 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4511" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 37.848973,171.63399 c 0.373944,0 0.624417,-0.17639 0.723194,-0.49389 l -0.331611,-0.10584 c -0.05644,0.16934 -0.186972,0.26811 -0.388055,0.26811 -0.28575,0 -0.437445,-0.2293 -0.437445,-0.6103 0,-0.37395 0.148167,-0.61383 0.448028,-0.61383 0.194028,0 0.306917,0.0988 0.363361,0.23636 l 0.331611,-0.11642 c -0.109361,-0.30339 -0.352778,-0.45156 -0.694972,-0.45156 -0.497417,0 -0.811389,0.35631 -0.811389,0.94545 0,0.59619 0.310445,0.94192 0.797278,0.94192 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4513" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 39.222105,171.59165 h 0.352778 v -1.05128 c 0,-0.3563 0.1905,-0.46213 0.419806,-0.46213 0.215194,0 0.395111,0.11994 0.395111,0.46919 v 1.04422 h 0.352777 v -1.06891 c 0,-0.56798 -0.275166,-0.77612 -0.666749,-0.77612 -0.218723,0 -0.388056,0.0776 -0.500945,0.22578 v -0.9278 l -0.352778,0.16227 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4515" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 42.955321,170.6074 c 0,-0.59266 -0.345722,-0.86078 -0.765528,-0.86078 -0.511528,0 -0.843139,0.34925 -0.843139,0.94192 0,0.55033 0.313973,0.94545 0.843139,0.94545 0.257528,0 0.472722,-0.10584 0.620889,-0.254 l -0.208139,-0.22578 c -0.123472,0.11641 -0.257528,0.16228 -0.409222,0.16228 -0.271639,0 -0.440972,-0.1905 -0.490361,-0.48684 h 1.241778 c 0.01058,-0.0882 0.01058,-0.16933 0.01058,-0.22225 z m -1.259417,-0.0847 c 0.03528,-0.28575 0.194028,-0.46567 0.493889,-0.46567 0.1905,0 0.402167,0.11642 0.416278,0.46567 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4517" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 44.321398,171.63751 c 0.148166,0 0.261055,-0.11641 0.261055,-0.25752 0,-0.13759 -0.112889,-0.25753 -0.261055,-0.25753 -0.148167,0 -0.261056,0.11994 -0.261056,0.25753 0,0.14111 0.112889,0.25752 0.261056,0.25752 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4519" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 46.491808,171.63399 c 0.409222,0 0.677333,-0.19403 0.677333,-0.52212 0,-0.35983 -0.313972,-0.47625 -0.613833,-0.59266 -0.211667,-0.0847 -0.409222,-0.15875 -0.409222,-0.28575 0,-0.11642 0.130528,-0.18345 0.321028,-0.18345 0.211666,0 0.338666,0.0917 0.430388,0.17286 l 0.232834,-0.19402 c -0.141111,-0.16228 -0.359834,-0.28223 -0.649111,-0.28223 -0.373945,0 -0.66675,0.17992 -0.66675,0.48331 0,0.31397 0.254,0.42686 0.578555,0.56092 0.246945,0.1023 0.4445,0.17286 0.4445,0.32808 0,0.14464 -0.144639,0.21167 -0.321028,0.21167 -0.218722,0 -0.395111,-0.12348 -0.490361,-0.22578 l -0.236361,0.20814 c 0.151695,0.1905 0.409222,0.32103 0.702028,0.32103 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4521" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 47.910801,172.30426 0.352778,-0.1658 v -0.70556 c 0.09525,0.11289 0.232834,0.20109 0.469195,0.20109 0.451555,0 0.783166,-0.34573 0.783166,-0.94545 0,-0.58914 -0.306916,-0.94192 -0.786694,-0.94192 -0.225778,0 -0.363361,0.0847 -0.465667,0.18698 v -0.14464 h -0.352778 z m 0.772584,-1.00189 c -0.197556,0 -0.331611,-0.0988 -0.419806,-0.21519 v -0.79728 c 0.08819,-0.13405 0.225778,-0.21166 0.41275,-0.21166 0.310445,0 0.479778,0.23988 0.479778,0.6103 0,0.39511 -0.172861,0.61383 -0.472722,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4523" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 50.705628,171.63399 c 0.232834,0 0.402167,-0.0882 0.515056,-0.19756 v 0.15522 h 0.342194 v -1.18533 c 0,-0.56445 -0.377472,-0.6597 -0.677333,-0.6597 -0.28575,0 -0.546806,0.0988 -0.712611,0.20462 l 0.105833,0.28927 c 0.162278,-0.1023 0.373945,-0.18697 0.575028,-0.18697 0.211667,0 0.366889,0.0847 0.366889,0.36336 v 0.12347 c -0.141111,-0.0741 -0.28575,-0.10583 -0.469195,-0.10583 -0.352777,0 -0.705555,0.17992 -0.705555,0.5962 0,0.39863 0.282222,0.60325 0.659694,0.60325 z m 0.05645,-0.31045 c -0.239889,0 -0.377472,-0.11642 -0.377472,-0.2928 0,-0.20462 0.194027,-0.29634 0.419805,-0.29634 0.15875,0 0.310445,0.0459 0.416278,0.10584 v 0.27163 c -0.09878,0.10584 -0.246945,0.21167 -0.458611,0.21167 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4525" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 53.458122,169.74662 c -0.261056,0 -0.532695,0.12348 -0.649111,0.33867 v -0.29633 H 52.0964 v 0.31044 h 0.377472 v 1.17828 H 52.0964 v 0.31397 h 1.252361 v -0.31397 h -0.515056 v -0.67733 c 0,-0.34573 0.264583,-0.51859 0.613833,-0.51859 0.0247,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345722 v -0.64558 c -0.09172,-0.0529 -0.225778,-0.0917 -0.409222,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4527" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 55.607365,171.59165 h 0.388056 l -0.66675,-1.29822 0.508,-0.50447 h -0.416278 l -0.645583,0.65616 v -1.40052 l -0.352778,0.1658 v 2.38125 h 0.352778 v -0.74789 l 0.299861,-0.29633 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4529" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 57.343859,171.63751 c 0.148166,0 0.261055,-0.11641 0.261055,-0.25752 0,-0.13759 -0.112889,-0.25753 -0.261055,-0.25753 -0.148167,0 -0.261056,0.11994 -0.261056,0.25753 0,0.14111 0.112889,0.25752 0.261056,0.25752 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4531" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 59.454297,171.63399 c 0.22225,0 0.377472,-0.0917 0.458611,-0.18698 v 0.14464 h 0.352778 v -2.54705 l -0.352778,0.1658 v 0.70556 c -0.09172,-0.0917 -0.246945,-0.16934 -0.465667,-0.16934 -0.462139,0 -0.776111,0.35278 -0.776111,0.94192 0,0.59267 0.299861,0.94545 0.783167,0.94545 z m 0.04586,-0.33162 c -0.299861,0 -0.472722,-0.25752 -0.472722,-0.61383 0,-0.39511 0.169333,-0.6103 0.469194,-0.6103 0.229306,0 0.356306,0.10936 0.416278,0.20461 v 0.80433 c -0.08114,0.13758 -0.215195,0.21519 -0.41275,0.21519 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4533" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 62.489012,170.6074 c 0,-0.59266 -0.345722,-0.86078 -0.765527,-0.86078 -0.511528,0 -0.843139,0.34925 -0.843139,0.94192 0,0.55033 0.313972,0.94545 0.843139,0.94545 0.257527,0 0.472722,-0.10584 0.620888,-0.254 l -0.208138,-0.22578 c -0.123473,0.11641 -0.257528,0.16228 -0.409223,0.16228 -0.271638,0 -0.440972,-0.1905 -0.490361,-0.48684 h 1.241778 c 0.01058,-0.0882 0.01058,-0.16933 0.01058,-0.22225 z m -1.259416,-0.0847 c 0.03528,-0.28575 0.194028,-0.46567 0.493889,-0.46567 0.1905,0 0.402166,0.11642 0.416277,0.46567 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4535" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 63.103673,172.30426 0.352777,-0.1658 v -0.70556 c 0.09525,0.11289 0.232834,0.20109 0.469195,0.20109 0.451555,0 0.783166,-0.34573 0.783166,-0.94545 0,-0.58914 -0.306916,-0.94192 -0.786694,-0.94192 -0.225778,0 -0.363361,0.0847 -0.465667,0.18698 v -0.14464 h -0.352777 z m 0.772583,-1.00189 c -0.197556,0 -0.331611,-0.0988 -0.419806,-0.21519 v -0.79728 c 0.0882,-0.13405 0.225778,-0.21166 0.41275,-0.21166 0.310445,0 0.479778,0.23988 0.479778,0.6103 0,0.39511 -0.172861,0.61383 -0.472722,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4537" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 66.201888,171.27768 v -2.23308 h -0.941916 l 0.162277,0.31044 h 0.426862 v 1.92264 h -0.518584 v 0.31397 h 1.386417 v -0.31397 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4539" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 68.19591,171.63399 c 0.522111,0 0.853722,-0.35984 0.853722,-0.94545 0,-0.58208 -0.331611,-0.94192 -0.853722,-0.94192 -0.522112,0 -0.853723,0.36337 -0.853723,0.94545 0,0.58561 0.331611,0.94192 0.853723,0.94192 z m 0,-0.33162 c -0.321028,0 -0.493889,-0.23988 -0.493889,-0.6103 0,-0.38453 0.172861,-0.61383 0.493889,-0.61383 0.324555,0 0.497416,0.23988 0.497416,0.6103 0,0.37395 -0.179916,0.61383 -0.497416,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4541" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 69.914764,172.27604 h 0.359833 l 0.938389,-2.48708 h -0.366889 l -0.426861,1.16064 c -0.02117,0.0564 -0.04233,0.11289 -0.05997,0.17286 -0.01764,-0.06 -0.03528,-0.11642 -0.05644,-0.17286 l -0.423334,-1.16064 h -0.359833 l 0.66675,1.76036 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4543" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 72.53673,171.63751 c 0.148167,0 0.261055,-0.11641 0.261055,-0.25752 0,-0.13759 -0.112888,-0.25753 -0.261055,-0.25753 -0.148167,0 -0.261056,0.11994 -0.261056,0.25753 0,0.14111 0.112889,0.25752 0.261056,0.25752 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4545" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 74.149751,171.59165 h 0.28575 l 0.225778,-1.016 c 0.01058,-0.0529 0.03175,-0.14111 0.04586,-0.21166 0.01058,0.0705 0.03175,0.16227 0.04233,0.21519 l 0.232834,1.01247 h 0.282222 l 0.458611,-1.80269 h -0.331611 l -0.239889,1.04422 c -0.01411,0.06 -0.02469,0.11289 -0.03528,0.17639 -0.01058,-0.0635 -0.01764,-0.11995 -0.03175,-0.17639 l -0.239889,-1.04422 h -0.275166 l -0.236361,1.04422 c -0.01411,0.0564 -0.02117,0.10583 -0.03175,0.16581 -0.0071,-0.06 -0.01764,-0.10937 -0.03175,-0.16228 l -0.246945,-1.04775 H 73.69114 Z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4547" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 76.87755,171.63399 c 0.522111,0 0.853722,-0.35984 0.853722,-0.94545 0,-0.58208 -0.331611,-0.94192 -0.853722,-0.94192 -0.522111,0 -0.853722,0.36337 -0.853722,0.94545 0,0.58561 0.331611,0.94192 0.853722,0.94192 z m 0,-0.33162 c -0.321028,0 -0.493889,-0.23988 -0.493889,-0.6103 0,-0.38453 0.172861,-0.61383 0.493889,-0.61383 0.324556,0 0.497417,0.23988 0.497417,0.6103 0,0.37395 -0.179917,0.61383 -0.497417,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4549" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 79.503044,169.74662 c -0.261056,0 -0.532695,0.12348 -0.649111,0.33867 v -0.29633 h -0.712612 v 0.31044 h 0.377473 v 1.17828 h -0.377473 v 0.31397 h 1.252362 v -0.31397 h -0.515056 v -0.67733 c 0,-0.34573 0.264583,-0.51859 0.613833,-0.51859 0.0247,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345722 v -0.64558 c -0.09172,-0.0529 -0.225778,-0.0917 -0.409222,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4551" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 81.652287,171.59165 h 0.388056 l -0.66675,-1.29822 0.508,-0.50447 h -0.416278 l -0.645583,0.65616 v -1.40052 l -0.352778,0.1658 v 2.38125 h 0.352778 v -0.74789 l 0.299861,-0.29633 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4553" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 84.193114,170.6074 c 0,-0.59266 -0.345722,-0.86078 -0.765528,-0.86078 -0.511528,0 -0.843139,0.34925 -0.843139,0.94192 0,0.55033 0.313973,0.94545 0.843139,0.94545 0.257528,0 0.472722,-0.10584 0.620889,-0.254 l -0.208139,-0.22578 c -0.123472,0.11641 -0.257528,0.16228 -0.409222,0.16228 -0.271639,0 -0.440972,-0.1905 -0.490361,-0.48684 h 1.241778 c 0.01058,-0.0882 0.01058,-0.16933 0.01058,-0.22225 z m -1.259417,-0.0847 c 0.03528,-0.28575 0.194028,-0.46567 0.493889,-0.46567 0.1905,0 0.402167,0.11642 0.416278,0.46567 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4555" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 86.014274,169.74662 c -0.261055,0 -0.532694,0.12348 -0.649111,0.33867 v -0.29633 h -0.712611 v 0.31044 h 0.377472 v 1.17828 h -0.377472 v 0.31397 h 1.252361 v -0.31397 h -0.515056 v -0.67733 c 0,-0.34573 0.264584,-0.51859 0.613834,-0.51859 0.02469,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345722 v -0.64558 c -0.09172,-0.0529 -0.225777,-0.0917 -0.409222,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4557" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 87.729601,171.63751 c 0.148167,0 0.261055,-0.11641 0.261055,-0.25752 0,-0.13759 -0.112888,-0.25753 -0.261055,-0.25753 -0.148167,0 -0.261056,0.11994 -0.261056,0.25753 0,0.14111 0.112889,0.25752 0.261056,0.25752 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4559" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 89.28265,171.59165 h 0.289278 l 0.299861,-1.56986 c 0.01058,-0.0564 0.02117,-0.11289 0.02822,-0.1658 0.0071,0.0529 0.01411,0.11288 0.02822,0.16933 l 0.299861,1.56633 h 0.289278 l 0.377472,-2.46944 h -0.345722 l -0.197555,1.54164 c -0.0035,0.0423 -0.01411,0.0952 -0.01764,0.15169 -0.0071,-0.0494 -0.01764,-0.0988 -0.03175,-0.15522 L 90.0129,169.12221 h -0.22225 l -0.28575,1.54869 c -0.01411,0.0565 -0.02469,0.11289 -0.03175,0.16581 l -0.02117,-0.16581 -0.215194,-1.54869 h -0.331611 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4561" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 92.070421,171.63399 c 0.522111,0 0.853722,-0.35984 0.853722,-0.94545 0,-0.58208 -0.331611,-0.94192 -0.853722,-0.94192 -0.522111,0 -0.853722,0.36337 -0.853722,0.94545 0,0.58561 0.331611,0.94192 0.853722,0.94192 z m 0,-0.33162 c -0.321028,0 -0.493889,-0.23988 -0.493889,-0.6103 0,-0.38453 0.172861,-0.61383 0.493889,-0.61383 0.324556,0 0.497417,0.23988 0.497417,0.6103 0,0.37395 -0.179917,0.61383 -0.497417,0.61383 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4563" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 94.695915,169.74662 c -0.261056,0 -0.532695,0.12348 -0.649111,0.33867 v -0.29633 h -0.712611 v 0.31044 h 0.377472 v 1.17828 h -0.377472 v 0.31397 h 1.252361 v -0.31397 h -0.515056 v -0.67733 c 0,-0.34573 0.264583,-0.51859 0.613833,-0.51859 0.02469,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345722 v -0.64558 c -0.09172,-0.0529 -0.225778,-0.0917 -0.409222,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4565" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 96.845158,171.59165 h 0.388056 l -0.66675,-1.29822 0.508,-0.50447 h -0.416278 l -0.645583,0.65616 v -1.40052 l -0.352778,0.1658 v 2.38125 h 0.352778 v -0.74789 l 0.299861,-0.29633 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4567" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 99.385985,170.6074 c 0,-0.59266 -0.345722,-0.86078 -0.765528,-0.86078 -0.511527,0 -0.843139,0.34925 -0.843139,0.94192 0,0.55033 0.313973,0.94545 0.843139,0.94545 0.257528,0 0.472722,-0.10584 0.620889,-0.254 l -0.208139,-0.22578 c -0.123472,0.11641 -0.257527,0.16228 -0.409222,0.16228 -0.271639,0 -0.440972,-0.1905 -0.490361,-0.48684 h 1.241778 c 0.01058,-0.0882 0.01058,-0.16933 0.01058,-0.22225 z m -1.259417,-0.0847 c 0.03528,-0.28575 0.194028,-0.46567 0.493889,-0.46567 0.1905,0 0.402167,0.11642 0.416278,0.46567 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4569" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 101.20715,169.74662 c -0.26106,0 -0.5327,0.12348 -0.64912,0.33867 v -0.29633 h -0.712607 v 0.31044 h 0.377477 v 1.17828 h -0.377477 v 0.31397 h 1.252357 v -0.31397 h -0.51505 v -0.67733 c 0,-0.34573 0.26458,-0.51859 0.61383,-0.51859 0.0247,0 0.0494,0 0.0741,0.004 v 0.39864 h 0.34572 v -0.64558 c -0.0917,-0.0529 -0.22578,-0.0917 -0.40922,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4571" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 105.68555,172.05026 h 0.3563 l -1.38641,-2.97039 h -0.35631 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4573" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 23.097074,174.15635 c -0.186972,0 -0.321028,0.127 -0.398639,0.26811 -0.04233,-0.13053 -0.15875,-0.26811 -0.338667,-0.26811 -0.169333,0 -0.28575,0.0988 -0.352777,0.27869 v -0.23636 h -0.310445 v 1.80269 h 0.331611 v -1.09008 c 0,-0.25047 0.08819,-0.4198 0.243417,-0.4198 0.148167,0 0.186972,0.15875 0.186972,0.38452 v 1.12536 h 0.331611 v -1.09008 c 0,-0.25047 0.07408,-0.4198 0.229306,-0.4198 0.151694,0 0.186972,0.13052 0.186972,0.40922 v 1.10066 h 0.331611 v -1.19238 c 0,-0.47273 -0.144639,-0.65264 -0.440972,-0.65264 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4575" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 24.660706,176.04371 c 0.232834,0 0.402167,-0.0882 0.515056,-0.19756 v 0.15522 h 0.342194 v -1.18533 c 0,-0.56444 -0.377472,-0.65969 -0.677333,-0.65969 -0.28575,0 -0.546805,0.0988 -0.712611,0.20461 l 0.105833,0.28928 c 0.162278,-0.10231 0.373945,-0.18698 0.575028,-0.18698 0.211667,0 0.366889,0.0847 0.366889,0.36336 v 0.12348 c -0.141111,-0.0741 -0.28575,-0.10584 -0.469194,-0.10584 -0.352778,0 -0.705556,0.17992 -0.705556,0.5962 0,0.39864 0.282222,0.60325 0.659694,0.60325 z m 0.05645,-0.31045 c -0.239889,0 -0.377472,-0.11641 -0.377472,-0.2928 0,-0.20461 0.194027,-0.29634 0.419805,-0.29634 0.15875,0 0.310445,0.0459 0.416278,0.10584 v 0.27164 c -0.09878,0.10583 -0.246944,0.21166 -0.458611,0.21166 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4577" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 26.958117,176.04371 c 0.409222,0 0.677333,-0.19403 0.677333,-0.52211 0,-0.35984 -0.313972,-0.47625 -0.613833,-0.59267 -0.211667,-0.0847 -0.409223,-0.15875 -0.409223,-0.28575 0,-0.11642 0.130528,-0.18344 0.321028,-0.18344 0.211667,0 0.338667,0.0917 0.430389,0.17286 l 0.232833,-0.19403 c -0.141111,-0.16228 -0.359833,-0.28222 -0.649111,-0.28222 -0.373944,0 -0.66675,0.17991 -0.66675,0.4833 0,0.31397 0.254,0.42686 0.578556,0.56092 0.246944,0.1023 0.4445,0.17286 0.4445,0.32808 0,0.14464 -0.144639,0.21167 -0.321028,0.21167 -0.218722,0 -0.395111,-0.12347 -0.490361,-0.22578 l -0.236361,0.20814 c 0.151694,0.1905 0.409222,0.32103 0.702028,0.32103 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4579" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 29.294332,176.04371 c 0.179917,0 0.292806,-0.0282 0.395111,-0.0811 l 0.03881,-0.32808 c -0.08467,0.0494 -0.176389,0.0917 -0.3175,0.0917 -0.204611,0 -0.257528,-0.0917 -0.257528,-0.23989 v -0.9772 h 0.606778 v -0.31044 h -0.606778 v -0.74436 l -0.352778,0.16933 v 0.57503 h -0.395111 v 0.31044 h 0.395111 v 1.06187 c 0,0.29633 0.141112,0.47272 0.493889,0.47272 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4581" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 32.10327,175.01712 c 0,-0.59266 -0.345722,-0.86077 -0.765528,-0.86077 -0.511527,0 -0.843138,0.34925 -0.843138,0.94191 0,0.55034 0.313972,0.94545 0.843138,0.94545 0.257528,0 0.472723,-0.10584 0.620889,-0.254 l -0.208139,-0.22578 c -0.123472,0.11642 -0.257527,0.16228 -0.409222,0.16228 -0.271639,0 -0.440972,-0.1905 -0.490361,-0.48684 h 1.241778 c 0.01058,-0.0882 0.01058,-0.16933 0.01058,-0.22225 z m -1.259416,-0.0847 c 0.03528,-0.28575 0.194027,-0.46567 0.493888,-0.46567 0.1905,0 0.402167,0.11642 0.416278,0.46567 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4583" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 33.92443,174.15635 c -0.261055,0 -0.532694,0.12347 -0.649111,0.33866 v -0.29633 h -0.712611 v 0.31044 h 0.377472 v 1.17828 h -0.377472 v 0.31397 h 1.252361 v -0.31397 h -0.515055 v -0.67733 c 0,-0.34572 0.264583,-0.51858 0.613833,-0.51858 0.02469,0 0.04939,0 0.07408,0.004 v 0.39864 h 0.345723 v -0.64558 c -0.09172,-0.0529 -0.225778,-0.0917 -0.409223,-0.0917 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4585" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 35.639757,174.80546 c 0.148167,0 0.261056,-0.11642 0.261056,-0.25753 0,-0.13758 -0.112889,-0.25753 -0.261056,-0.25753 -0.148166,0 -0.261055,0.11995 -0.261055,0.25753 0,0.14111 0.112889,0.25753 0.261055,0.25753 z m 0,1.24178 c 0.148167,0 0.261056,-0.11642 0.261056,-0.25753 0,-0.13759 -0.112889,-0.25753 -0.261056,-0.25753 -0.148166,0 -0.261055,0.11994 -0.261055,0.25753 0,0.14111 0.112889,0.25753 0.261055,0.25753 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4587" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 37.016417,173.53193 v 0.33514 h 1.171223 c -0.511528,0.67733 -0.694973,1.34408 -0.6985,2.1343 h 0.363361 c 0,-0.56444 0.148166,-1.49225 0.751416,-2.18016 v -0.28928 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4589" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 39.980578,176.04371 c 0.694972,0 0.878416,-0.71261 0.878416,-1.27706 0,-0.6103 -0.201083,-1.27705 -0.878416,-1.27705 -0.6985,0 -0.878417,0.71261 -0.878417,1.27705 0,0.61031 0.201083,1.27706 0.878417,1.27706 z m 0,-0.33867 c -0.402167,0 -0.511528,-0.47272 -0.511528,-0.93839 0,-0.43039 0.09878,-0.94191 0.511528,-0.94191 0.402166,0 0.507999,0.47977 0.507999,0.94191 0,0.43392 -0.09172,0.93839 -0.507999,0.93839 z m 0,-0.6985 c 0.137583,0 0.239888,-0.10936 0.239888,-0.23989 0,-0.127 -0.102305,-0.23989 -0.239888,-0.23989 -0.137584,0 -0.239889,0.11289 -0.239889,0.23989 0,0.13053 0.102305,0.23989 0.239889,0.23989 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4591" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 41.357238,173.53193 v 0.33514 h 1.171222 c -0.511528,0.67733 -0.694972,1.34408 -0.6985,2.1343 h 0.363361 c 0,-0.56444 0.148167,-1.49225 0.751417,-2.18016 v -0.28928 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4593" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 43.527648,173.53193 v 0.33514 h 1.171222 c -0.511528,0.67733 -0.694972,1.34408 -0.6985,2.1343 h 0.363361 c 0,-0.56444 0.148167,-1.49225 0.751417,-2.18016 v -0.28928 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.52777767px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';stroke-width:0.26458332"
+         id="path4595" />
+    </g>
+    <g
+       id="g4423"
+       transform="translate(4.5456398,-21.662051)">
+      <g
+         id="g4351">
+        <rect
+           style="fill:#ffffff;stroke-width:0.27260941;stroke-dasharray:0.81782815, 0.81782815"
+           id="rect4267-3-6"
+           width="25.940479"
+           height="9.6245365"
+           x="60.155434"
+           y="189.6994"
+           ry="0.60951132" />
+        <rect
+           style="fill:#ffffff;stroke-width:0.16506428;stroke-dasharray:0.49519282, 0.49519282"
+           id="rect4267-3-6-6"
+           width="9.5104828"
+           height="9.6245365"
+           x="88.578026"
+           y="189.6994"
+           ry="0.60951132" />
+        <rect
+           style="fill:#004153;stroke-width:0.86500001;stroke-dasharray:2.59499997, 2.59499997"
+           id="rect4346"
+           width="1.8517965"
+           height="1.8517965"
+           x="92.407372"
+           y="193.58577"
+           ry="0" />
+      </g>
+      <g
+         aria-label="pid"
+         transform="matrix(0.26458333,0,0,0.26458333,-0.0469556,139.59076)"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.33333397px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';text-align:center;text-anchor:middle"
+         id="flowRoot4308">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 258.88897,217.43108 2.13333,-1.00267 v -4.26666 c 0.576,0.68266 1.408,1.216 2.83734,1.216 2.73066,0 4.736,-2.09067 4.736,-5.71734 0,-3.56266 -1.856,-5.696 -4.75734,-5.696 -1.36533,0 -2.19733,0.512 -2.816,1.13067 v -0.87467 h -2.13333 z m 4.672,-6.05867 c -1.19467,0 -2.00533,-0.59733 -2.53867,-1.30133 v -4.82133 c 0.53334,-0.81067 1.36534,-1.28 2.496,-1.28 1.87734,0 2.90134,1.45066 2.90134,3.69066 0,2.38934 -1.04534,3.712 -2.85867,3.712 z"
+           id="path4598" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 276.72864,200.44974 c 0.74666,0 1.30133,-0.576 1.30133,-1.30133 0,-0.72533 -0.55467,-1.30133 -1.30133,-1.30133 -0.72534,0 -1.30134,0.576 -1.30134,1.30133 0,0.72533 0.576,1.30133 1.30134,1.30133 z m 1.06666,10.77334 v -9.00267 h -5.14133 v 1.87734 h 3.008 v 7.12533 h -3.008 v 1.89867 h 8.14933 v -1.89867 z"
+           id="path4600" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 289.3203,213.37775 c 1.344,0 2.28267,-0.55467 2.77334,-1.13067 v 0.87467 h 2.13333 v -15.40267 l -2.13333,1.00266 v 4.26667 c -0.55467,-0.55466 -1.49334,-1.024 -2.816,-1.024 -2.79467,0 -4.69334,2.13334 -4.69334,5.696 0,3.584 1.81334,5.71734 4.736,5.71734 z m 0.27734,-2.00534 c -1.81334,0 -2.85867,-1.55733 -2.85867,-3.712 0,-2.38933 1.024,-3.69066 2.83733,-3.69066 1.38667,0 2.15467,0.66133 2.51734,1.23733 v 4.864 c -0.49067,0.832 -1.30134,1.30133 -2.496,1.30133 z"
+           id="path4602" />
+      </g>
+    </g>
+    <g
+       id="g4920">
+      <rect
+         ry="0.60951132"
+         y="180.32442"
+         x="64.701073"
+         height="9.6245365"
+         width="25.940479"
+         id="rect4267-3-6-7"
+         style="fill:#ffffff;stroke-width:0.27260941;stroke-dasharray:0.81782815, 0.81782815" />
+      <rect
+         ry="0.60951132"
+         y="180.32442"
+         x="93.123665"
+         height="9.6245365"
+         width="9.5104828"
+         id="rect4267-3-6-6-7"
+         style="fill:#ffffff;stroke-width:0.16506428;stroke-dasharray:0.49519282, 0.49519282" />
+      <rect
+         ry="0"
+         y="184.21078"
+         x="96.953011"
+         height="1.8517965"
+         width="1.8517965"
+         id="rect4346-4"
+         style="fill:#004153;stroke-width:0.86500001;stroke-dasharray:2.59499997, 2.59499997" />
+      <g
+         aria-label="root"
+         transform="matrix(0.26458333,0,0,0.26458333,4.7188176,130.752)"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.33333397px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';text-align:center;text-anchor:middle"
+         id="flowRoot4308-0">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 259.62247,201.96441 c -1.57867,0 -3.22133,0.74667 -3.92533,2.048 v -1.792 h -4.30934 v 1.87734 h 2.28267 v 7.12533 h -2.28267 v 1.89867 h 7.57334 v -1.89867 h -3.11467 v -4.096 c 0,-2.09067 1.6,-3.136 3.712,-3.136 0.14933,0 0.29867,0 0.448,0.0213 v 2.41067 h 2.09067 v -3.904 c -0.55467,-0.32 -1.36534,-0.55467 -2.47467,-0.55467 z"
+           id="path4605" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 269.99547,213.37775 c 3.15733,0 5.16267,-2.176 5.16267,-5.71734 0,-3.52 -2.00534,-5.696 -5.16267,-5.696 -3.15733,0 -5.16267,2.19734 -5.16267,5.71734 0,3.54133 2.00534,5.696 5.16267,5.696 z m 0,-2.00534 c -1.94133,0 -2.98667,-1.45066 -2.98667,-3.69066 0,-2.32534 1.04534,-3.712 2.98667,-3.712 1.96267,0 3.008,1.45066 3.008,3.69066 0,2.26134 -1.088,3.712 -3.008,3.712 z"
+           id="path4607" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 283.12047,213.37775 c 3.15733,0 5.16267,-2.176 5.16267,-5.71734 0,-3.52 -2.00534,-5.696 -5.16267,-5.696 -3.15733,0 -5.16267,2.19734 -5.16267,5.71734 0,3.54133 2.00534,5.696 5.16267,5.696 z m 0,-2.00534 c -1.94133,0 -2.98667,-1.45066 -2.98667,-3.69066 0,-2.32534 1.04534,-3.712 2.98667,-3.712 1.96267,0 3.008,1.45066 3.008,3.69066 0,2.26134 -1.088,3.712 -3.008,3.712 z"
+           id="path4609" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 297.24814,213.37775 c 1.088,0 1.77066,-0.17067 2.38933,-0.49067 l 0.23467,-1.984 c -0.512,0.29867 -1.06667,0.55467 -1.92,0.55467 -1.23734,0 -1.55734,-0.55467 -1.55734,-1.45067 v -5.90933 h 3.66934 v -1.87734 h -3.66934 v -4.50133 l -2.13333,1.024 v 3.47733 h -2.38933 v 1.87734 h 2.38933 v 6.42133 c 0,1.792 0.85333,2.85867 2.98667,2.85867 z"
+           id="path4611" />
+      </g>
+    </g>
+    <g
+       id="g4441"
+       transform="translate(4.5456398,-21.662051)">
+      <rect
+         ry="0.60951132"
+         y="214.27353"
+         x="60.155434"
+         height="9.6245365"
+         width="25.940479"
+         id="rect4267-3-6-8"
+         style="fill:#ffffff;stroke-width:0.27260941;stroke-dasharray:0.81782815, 0.81782815" />
+      <rect
+         ry="0.60951132"
+         y="214.27353"
+         x="88.578026"
+         height="9.6245365"
+         width="9.5104828"
+         id="rect4267-3-6-6-5"
+         style="fill:#ffffff;stroke-width:0.16506428;stroke-dasharray:0.49519282, 0.49519282" />
+      <rect
+         ry="0"
+         y="218.1599"
+         x="92.407372"
+         height="1.8517965"
+         width="1.8517965"
+         id="rect4346-8"
+         style="fill:#004153;stroke-width:0.86500001;stroke-dasharray:2.59499997, 2.59499997" />
+      <g
+         aria-label="net"
+         transform="matrix(0.26458333,0,0,0.26458333,0.0546444,164.70111)"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.33333397px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';text-align:center;text-anchor:middle"
+         id="flowRoot4308-2">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 264.00897,201.96441 c -1.45067,0 -2.64533,0.68267 -3.17867,1.57867 v -1.32267 h -1.984 v 10.90134 h 2.13334 v -6.35734 c 0,-2.15466 1.10933,-2.79466 2.53866,-2.79466 1.344,0 2.38934,0.72533 2.38934,2.83733 v 6.31467 h 2.13333 v -6.464 c 0,-3.43467 -1.664,-4.69334 -4.032,-4.69334 z"
+           id="path4614" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 281.42197,207.16975 c 0,-3.584 -2.09067,-5.20534 -4.62933,-5.20534 -3.09334,0 -5.09867,2.112 -5.09867,5.696 0,3.328 1.89867,5.71734 5.09867,5.71734 1.55733,0 2.85866,-0.64 3.75466,-1.536 l -1.25866,-1.36534 c -0.74667,0.704 -1.55734,0.98134 -2.47467,0.98134 -1.64267,0 -2.66667,-1.152 -2.96533,-2.944 h 7.50933 c 0.064,-0.53334 0.064,-1.024 0.064,-1.344 z m -7.616,-0.512 c 0.21333,-1.728 1.17333,-2.816 2.98667,-2.816 1.152,0 2.432,0.704 2.51733,2.816 z"
+           id="path4616" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 290.68564,213.37775 c 1.088,0 1.77066,-0.17067 2.38933,-0.49067 l 0.23467,-1.984 c -0.512,0.29867 -1.06667,0.55467 -1.92,0.55467 -1.23734,0 -1.55734,-0.55467 -1.55734,-1.45067 v -5.90933 h 3.66934 v -1.87734 h -3.66934 v -4.50133 l -2.13333,1.024 v 3.47733 h -2.38933 v 1.87734 h 2.38933 v 6.42133 c 0,1.792 0.85333,2.85867 2.98667,2.85867 z"
+           id="path4618" />
+      </g>
+    </g>
+    <g
+       id="g5076"
+       transform="translate(-43.135931,10.252822)">
+      <g
+         id="g5082"
+         transform="translate(55.647455,2.0869666)">
+        <rect
+           ry="0.071478873"
+           y="152.64087"
+           x="168.72737"
+           height="2.9832764"
+           width="16.894253"
+           id="rect4267-4"
+           style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016" />
+        <rect
+           ry="0.071478873"
+           y="158.12099"
+           x="168.72737"
+           height="2.9832764"
+           width="16.894253"
+           id="rect4267-4-6"
+           style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016" />
+        <rect
+           ry="0.071478873"
+           y="163.6011"
+           x="168.72737"
+           height="2.9832764"
+           width="16.894253"
+           id="rect4267-4-2"
+           style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016" />
+        <rect
+           ry="0.071478873"
+           y="169.08122"
+           x="168.72737"
+           height="2.9832764"
+           width="16.894253"
+           id="rect4267-4-9"
+           style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016" />
+      </g>
+    </g>
+    <rect
+       style="fill:#004153;stroke-width:0.32449889;stroke-dasharray:0.97349655, 0.97349655"
+       id="rect4267-3-6-7-6"
+       width="36.755531"
+       height="9.6245365"
+       x="129.86395"
+       y="180.32442"
+       ry="0.60951132" />
+    <g
+       aria-label="/"
+       transform="matrix(0.26458333,0,0,0.26458333,4.316547,137.57688)"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.33333397px;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono Semi-Bold';fill:#ffffff"
+       id="flowRoot5086">
+      <path
+         d="m 542.69977,188.73492 h 2.15467 l 8.384,-17.96266 h -2.15467 z"
+         id="path5472"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
+       d="M 97.892543,185.12277 H 126.47671"
+       id="path5414"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.56500006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-4)"
+       d="m 97.892543,172.83354 c 33.305887,-5.55058 58.708467,-3.66537 79.241837,1.39537"
+       id="path5414-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.56500006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-4-0)"
+       d="m 97.938982,197.34677 c 12.122888,6.96822 41.191998,15.74131 79.195398,9.51141"
+       id="path5414-2-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g6616">
+      <rect
+         style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016"
+         id="rect4267-4-6-7"
+         width="16.894253"
+         height="2.9832764"
+         x="181.23889"
+         y="201.70486"
+         ry="0.071478873" />
+      <rect
+         style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016"
+         id="rect4267-4-2-0"
+         width="16.894253"
+         height="2.9832764"
+         x="181.23889"
+         y="207.18498"
+         ry="0.071478873" />
+      <rect
+         style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016"
+         id="rect4267-4-9-1"
+         width="16.894253"
+         height="2.9832764"
+         x="181.23889"
+         y="212.6651"
+         ry="0.071478873" />
+      <rect
+         style="fill:#004153;stroke-width:0.0394965;stroke-dasharray:0.1184895, 0.1184895"
+         id="rect4267-4-0-7"
+         width="5.0356846"
+         height="2.9832764"
+         x="181.23889"
+         y="196.22475"
+         ry="0.071478873" />
+      <rect
+         style="fill:#004153;stroke-width:0.0394965;stroke-dasharray:0.1184895, 0.1184895"
+         id="rect4267-4-0-7-2"
+         width="5.0356846"
+         height="2.9832764"
+         x="187.16815"
+         y="196.22475"
+         ry="0.071478873" />
+      <rect
+         style="fill:#004153;stroke-width:0.0394965;stroke-dasharray:0.1184895, 0.1184895"
+         id="rect4267-4-0-7-6"
+         width="5.0356846"
+         height="2.9832764"
+         x="193.09746"
+         y="196.22475"
+         ry="0.071478873" />
+      <rect
+         style="fill:#004153;stroke-width:0.07234339;stroke-dasharray:0.21703016, 0.21703016"
+         id="rect4267-4-9-1-0"
+         width="16.894253"
+         height="2.9832764"
+         x="181.23889"
+         y="218.17076"
+         ry="0.071478873" />
+    </g>
+  </g>
+</svg>

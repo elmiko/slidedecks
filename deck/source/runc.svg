@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="601.46893mm"
+   height="184.10655mm"
+   viewBox="0 0 601.46893 184.10655"
+   version="1.1"
+   id="svg1163"
+   sodipodi:docname="runc.svg"
+   inkscape:export-filename="/home/mike/workspace/slidedecks/deck/docker.svg.png"
+   inkscape:export-xdpi="228.89999"
+   inkscape:export-ydpi="228.89999"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs1157" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="1106.0681"
+     inkscape:cy="535.26332"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1060"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1160">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(12.306683,-79.717247)">
+    <rect
+       style="opacity:1;vector-effect:none;fill:#004153;fill-opacity:1;stroke:none;stroke-width:1.44770181;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1165"
+       width="297.84521"
+       height="29.860674"
+       x="-7.3066826"
+       y="84.717247"
+       ry="0.93653846" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.21333802;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1165-3"
+       width="289.55984"
+       height="21.575317"
+       x="-3.1639977"
+       y="88.859924"
+       ry="0.67667979" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="2.9399629"
+       y="102.42777"
+       id="text1169"><tspan
+         sodipodi:role="line"
+         id="tspan1167"
+         x="2.9399629"
+         y="102.42777"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';stroke-width:0.26458332">$ runc run busybox</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:#007a87;fill-opacity:1;stroke:none;stroke-width:1.1357609;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1165-6-2"
+       width="183.31845"
+       height="29.860674"
+       x="400.84378"
+       y="147.2963"
+       ry="0.93653846" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:19.75555611px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:'Overpass Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="432.37589"
+       y="169.23985"
+       id="text1203-2"><tspan
+         sodipodi:role="line"
+         id="tspan1201-9"
+         x="432.37589"
+         y="169.23985"
+         style="font-size:19.75555611px;fill:#ffffff;stroke-width:0.26458332">Linux Kernel</tspan></text>
+    <g
+       id="g2096"
+       transform="translate(1.4859201)">
+      <g
+         transform="rotate(30,260.33469,129.5075)"
+         id="g1364">
+        <path
+           sodipodi:type="star"
+           style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:2.56500006;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path1226"
+           sodipodi:sides="3"
+           sodipodi:cx="325.05951"
+           sodipodi:cy="20.321421"
+           sodipodi:r1="25.481874"
+           sodipodi:r2="12.740937"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="false"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 347.12746,33.062358 -22.06795,0 -22.06795,0 11.03397,-19.111406 11.03398,-19.1114058 11.03397,19.1114058 z"
+           inkscape:transform-center-x="-1.6225302e-06"
+           inkscape:transform-center-y="-6.370469"
+           transform="matrix(0,0.57180407,-0.52533955,0,358.25346,-94.946121)" />
+        <g
+           style="fill:#3f9c35"
+           id="g1277"
+           transform="matrix(1,0,0,0.57180407,-5.1464195,33.530176)">
+          <rect
+             transform="matrix(0,1,1,0,0,0)"
+             ry="0"
+             y="332.31668"
+             x="89.979294"
+             height="10.961308"
+             width="20.788691"
+             id="rect1228"
+             style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:1.31701291;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0,1,1,0,0,0)"
+             ry="0"
+             y="322.48776"
+             x="89.979294"
+             height="7.5595231"
+             width="20.788691"
+             id="rect1228-2"
+             style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:1.09371972;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0,1,1,0,0,0)"
+             ry="0"
+             y="317.42145"
+             x="89.979294"
+             height="2.6458325"
+             width="20.788691"
+             id="rect1228-2-8"
+             style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:0.64705324;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         transform="matrix(-0.8660254,0.5,0.5,0.8660254,588.77848,-52.575997)"
+         id="g1364-5">
+        <path
+           sodipodi:type="star"
+           style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:2.56500006;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path1226-3"
+           sodipodi:sides="3"
+           sodipodi:cx="325.05951"
+           sodipodi:cy="20.321421"
+           sodipodi:r1="25.481874"
+           sodipodi:r2="12.740937"
+           sodipodi:arg1="0.52359878"
+           sodipodi:arg2="1.5707963"
+           inkscape:flatsided="false"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 347.12746,33.062358 -22.06795,0 -22.06795,0 11.03397,-19.111406 11.03398,-19.1114058 11.03397,19.1114058 z"
+           inkscape:transform-center-x="-1.6225302e-06"
+           inkscape:transform-center-y="-6.370469"
+           transform="matrix(0,0.57180407,-0.52533955,0,358.25346,-94.946121)" />
+        <g
+           style="fill:#3f9c35"
+           id="g1277-7"
+           transform="matrix(1,0,0,0.57180407,-5.1464195,33.530176)">
+          <rect
+             transform="matrix(0,1,1,0,0,0)"
+             ry="0"
+             y="332.31668"
+             x="89.979294"
+             height="10.961308"
+             width="20.788691"
+             id="rect1228-6"
+             style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:1.31701291;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0,1,1,0,0,0)"
+             ry="0"
+             y="322.48776"
+             x="89.979294"
+             height="7.5595231"
+             width="20.788691"
+             id="rect1228-2-81"
+             style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:1.09371972;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0,1,1,0,0,0)"
+             ry="0"
+             y="317.42145"
+             x="89.979294"
+             height="2.6458325"
+             width="20.788691"
+             id="rect1228-2-8-3"
+             style="opacity:1;vector-effect:none;fill:#3f9c35;fill-opacity:1;stroke:none;stroke-width:0.64705324;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g1502"
+       transform="translate(0,29.523695)">
+      <rect
+         ry="2.1338627"
+         y="161.26384"
+         x="-7.3066792"
+         height="68.03627"
+         width="297.84521"
+         id="rect1165-5"
+         style="opacity:1;vector-effect:none;fill:#004153;fill-opacity:1;stroke:none;stroke-width:2.18524218;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         ry="1.8740041"
+         y="165.40652"
+         x="-3.1639941"
+         height="59.750912"
+         width="289.55984"
+         id="rect1165-3-0"
+         style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.01918197;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text1169-9"
+         y="178.97437"
+         x="2.9399641"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';stroke-width:0.26458332"
+           y="178.97437"
+           x="2.9399641"
+           id="tspan1167-9"
+           sodipodi:role="line">/ # ls</tspan><tspan
+           id="tspan1460"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';stroke-width:0.26458332"
+           y="192.20354"
+           x="2.9399641"
+           sodipodi:role="line">bin   dev   etc   home  proc  root  run   </tspan><tspan
+           id="tspan1490"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';stroke-width:0.26458332"
+           y="205.43269"
+           x="2.9399641"
+           sodipodi:role="line">sys   tmp   usr   var</tspan><tspan
+           id="tspan1492"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';stroke-width:0.26458332"
+           y="218.66187"
+           x="2.9399641"
+           sodipodi:role="line">/ #</tspan><tspan
+           id="tspan1462"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';stroke-width:0.26458332"
+           y="231.89104"
+           x="2.9399641"
+           sodipodi:role="line" /></text>
+    </g>
+  </g>
+</svg>

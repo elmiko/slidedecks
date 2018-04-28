@@ -1,49 +1,332 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="deck/overpass-webfont/overpass.css">
+    <link rel="stylesheet" href="deck/main.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="cover" data-background-image="deck/purple-background.png">
+          <h1>Containers 101</h1>
+          <h3>Docker and Beyond</h3>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section data-background-image="deck/white-background.png">
+          <img src="deck/Tux.svg">
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section data-background-image="deck/white-background.png">
+          <h2>Namespaces</h2>
+          <p class="quote">“Namespaces are a feature of the Linux kernel that partitions kernel
+          <span data-fragment-index="1" class="fragment highlight-red">resources</span>
+          such that one set of
+          <span data-fragment-index="2" class="fragment highlight-red">processes</span> sees one set of
+          <span data-fragment-index="1" class="fragment highlight-red">resources</span> while another set of
+          <span data-fragment-index="2" class="fragment highlight-red">processes</span> sees a different set of
+          <span data-fragment-index="1" class="fragment highlight-red">resources</span>.”</p>
+
+          <p class="attribution"><a href="https://en.wikipedia.org/wiki/Linux_namespaces">https://en.wikipedia.org/wiki/Linux_namespaces</a></p>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Capabilities</h2>
+          <p class="quote">“Privileged
+          <span data-fragment-index="1" class="fragment highlight-red">processes</span>
+          bypass all kernel permission checks, while unprivileged
+          <span data-fragment-index="1" class="fragment highlight-red">processes</span>
+          are subject to full permission checking based on the
+          <span data-fragment-index="1" class="fragment highlight-red">process's</span>
+          credentials”</p>
+          <p data-fragment-index="2" class="fragment code">$ man capabilities</p>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Virtual File Systems</h2>
+          <img src="deck/iamchroot.png">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Processes</h2>
+          <img src="deck/containers-1.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Container Processes</h2>
+          <img src="deck/containers-2.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Open Container Initiative</h2>
+          <img width="33%" src="deck/oci-logo.svg"><br/>
+          <strong><a href="https://www.opencontainers.org/">www.opencontainers.org</a></strong>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Docker</h2>
+          <img src="deck/docker.svg"><br/>
+          <strong><a href="https://www.docker.com/">www.docker.com</a></strong>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>runC</h2>
+          <img src="deck/runc.svg"><br/>
+          <strong><a href="https://github.com/opencontainers/runc">github.com/opencontainers/runc</a></strong>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Other runtimes</h2>
+          <div id="runtimes">
+            podman &#8226; <a href="https://github.com/projectatomic/libpod">github.com/projectatomic/libpod</a></br>
+            rkt &#8226; <a href="https://coreos.com/rkt/">coreos.com/rkt/</a></br>
+            systemd-nspawn &#8226; <span class="code">&nbsp;man systemd-nspawn&nbsp;</span></br>
+          </div>
+        </section>
+
+        <section data-background-image="deck/purple-background.png">
+          <h1 class="white-header">Docker Deep Dive</h1>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Images</h2>
+          <div class="code-block"><pre>
+
+$ docker images
+REPOSITORY                            TAG     IMAGE ID      CREATED       SIZE
+docker.io/busybox                     latest  8ac48589692a  3 weeks ago   1.15 MB
+docker.io/postgres                    latest  30121e967865  6 weeks ago   289 MB
+docker.io/centos/python-35-centos7    latest  4518d62dfff7  2 months ago  667 MB
+docker.io/jekyll/minimal              latest  3d1fdb16e38f  3 months ago  161 MB
+docker.io/centos/nodejs-6-centos7     latest  0129e5e73319  5 months ago  504 MB
+docker.io/asciinema/asciicast2gif     latest  83dce8e34be5  5 months ago  405 MB
+docker.io/starefossen/github-pages    latest  20bbc7303c66  8 months ago  194 MB
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Registries</h2>
+          <img src="deck/registries.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Running</h2>
+          <div class="code-block"><pre>
+
+$ docker run -it --name mybusybox docker.io/busybox
+/ #
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ docker ps
+CONTAINER ID  IMAGE              COMMAND  STATUS         NAMES
+5e5201e262de  docker.io/busybox  "sh"     Up 12 minutes  mybusybox
+          </pre></div>
+          <div class="code-block"><pre>
+
+/ # exit
+$
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ docker ps -a
+CONTAINER ID  IMAGE              COMMAND  STATUS                     NAMES
+2ba55c6cc742  docker.io/busybox  "sh"     Exited (0) 2 seconds ago   mybusybox
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Managing</h2>
+          <div class="code-block"><pre>
+
+$ docker start -ai mybusybox
+/ #
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ docker kill mybusybox
+mybusybox
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ docker rm mybusybox
+mybusybox
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Building</h2>
+          <div class="code-block"><pre>
+
+FROM fedora:latest
+
+CMD ["echo", "Hello World!"]
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ docker build -t penguicon-1 -f Dockerfile.1 .
+Sending build context to Docker daemon 2.048 kB
+Step 1/2 : FROM fedora:latest
+Trying to pull repository docker.io/library/fedora ...
+sha256:ec588fc80b05e19d3006bf2e8aa325f0a2e2ff1f609b7afb39176ca8e3e13467: Pulling from docker.io/library/fedora
+2176639d844b: Pull complete
+Digest: sha256:ec588fc80b05e19d3006bf2e8aa325f0a2e2ff1f609b7afb39176ca8e3e13467
+Status: Downloaded newer image for docker.io/fedora:latest
+ ---> 9110ae7f579f
+Step 2/2 : CMD echo Hello World!
+ ---> Running in 8d7337876805
+ ---> 2c4d097ab724
+Removing intermediate container 8d7337876805
+Successfully built 2c4d097ab724
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>A Classic Reborn</h2>
+          <div class="code-block"><pre>
+
+$ docker run penguicon-1
+Hello World!
+          </pre></div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Customize The Build</h2>
+          <div class="code-block"><pre>
+
+FROM fedora:latest
+
+RUN dnf install -y figlet
+
+CMD ["figlet", "-f", "slant", "Hello World!"]
+          </pre></div>
+        </section>
+
+        <section data-background-color="#121314">
+          <img src="deck/peng1.gif">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Networking</h2>
+          <img src="deck/network.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Publish</h2>
+          <div class="code-block"><pre>
+
+EXPOSE 8000
+          </pre></div>
+          <div class="code-block"><pre>
+
+$ docker run --publish --name container-a myimage
+          </pre></div>
+          <img src="deck/publishing.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Linking</h2>
+          <div class="code-block"><pre>
+
+$ docker run --link container-a --name container-b myimage
+          </pre></div>
+          <br/>
+          <img src="deck/linking.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Storage</h2>
+          <div class="code-block"><pre>
+
+$ docker run --volume /tmp/foo:/data --name container-a myimage
+          </pre></div>
+          <br/>
+          <img src="deck/storage.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Security</h2>
+          <img src="deck/iamroot.png">
+        </section>
+
+        <section data-background-image="deck/purple-background.png">
+          <h1 class="white-header">Case Study</h1>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Architecture</h2>
+          <img src="deck/case-study.svg">
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Demo</h2>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>On the Horizon</h2>
+          <div id="horizon">
+          buildah &#8226; <a href="https://github.com/projectatomic/buildah">github.com/projectatomic/buildah</a></br>
+          kaniko &#8226; <a href="https://github.com/GoogleContainerTools/kaniko">github.com/GoogleContainerTools/kaniko</a></br>
+          libpod &#8226; <a href="https://github.com/projectatomic/libpod">https://github.com/projectatomic/libpod</a></br>
+          skopeo &#8226; <a href="https://github.com/projectatomic/skopeo">github.com/projectatomic/skopeo</a></br>
+          cri-o &#8226; <a href="http://cri-o.io/">cri-o.io/</a></br>
+          </div>
+        </section>
+
+        <section data-background-image="deck/white-background.png">
+          <h2>Recap</h2>
+          <div id="recap">
+          Docker &#8226; <a href="https://docs.docker.com">docs.docker.com</a></br>
+          Open Container Initiative &#8226; <a href="https://www.opencontainers.org">www.opencontainers.org</a></br>
+          runC &#8226; <a href="http://runc.net">runc.net</a></br>
+          </br>
+          <strong>This presentation</strong></br>
+          <a href="https://github.com/elmiko/slidedecks/tree/2018/penguicon-containers-101">github.com/elmiko/slidedecks/tree/2018/penguicon-containers-101</a></br>
+          </br>
+          <strong>Stay in touch!</strong></br>
+          Michael McCune</br>
+          Twitter &#8226; @FOSSjunkie</br>
+          <a href="https://elmiko.github.io">elmiko.github.io</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+  controls: false,
+  dependencies: [
+    { src: 'plugin/markdown/marked.js' },
+    { src: 'plugin/markdown/markdown.js' },
+    { src: 'plugin/notes/notes.js', async: true },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ],
+  history: true
+});
+    </script>
+  </body>
 </html>
