@@ -117,29 +117,16 @@ section img.logo-top {
     justify-content: center;
 }
 
-code.codeword {
-    color: #dcdcdc;
-    background: #3f3f3f;
-    font-size: 0.55em;
-}
-
 .reveal div .pad-top-1 {
     padding-top: 1em;
 }
 
-.reveal div .code-box {
-    display: grid;
-    grid-gap: .25em;
-}
-
-.reveal div .code-box div {
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .reveal div .pad-left-1 {
     padding-left: 1em;
+}
+
+.reveal div .pad-right-2 {
+    padding-right: 2em;
 }
 
 .reveal div .col-1 {
@@ -156,6 +143,10 @@ code.codeword {
 
 .reveal .pad-before-1 {
     padding-top: 1em;
+}
+
+.reveal .pad-before-2 {
+    padding-top: 2em;
 }
 
 .reveal .pad-before-3 {
@@ -179,13 +170,16 @@ span#rdd-desc {
     font-weight: bold;
 }
 
-.reveal pre code {
-    max-height: 600px;
+.reveal div pre {
+    padding: .25em;
+    background: #fff;
+    border: 0;
+    box-shadow: 0px 0px 0px;
 }
 
 p.link-text {
-    font-weight: bold;
     font-size: .5em;
+    text-align: right;
 }
 
 .reveal section h3,
@@ -198,4 +192,18 @@ p.link-text {
 .reveal span.repolink {
     color: #004153;
     font-weight: bold;
+}
+
+.red {
+    color: rgb(255, 44, 45);
+}
+
+p.final {
+    text-align: center;
+    font-weight: bold;
+}
+
+span.finalrad {
+    color: #cc0000;
+    font-size: 1.25em;
 }
