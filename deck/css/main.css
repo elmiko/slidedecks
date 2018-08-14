@@ -24,25 +24,46 @@
     box-shadow: 0 0 0;
 }
 
-section#cover,
-section#cover h1,
-section#cover h2,
-section#cover h3,
-section#cover h4
+.reveal section h1,
+.reveal section h2,
+.reveal section h3,
+.reveal section h4
 {
     color: white;
 }
 
+
 #cover-name-div {
-    padding-left: 1em;
-    padding-top: 2em;
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-size: .7em;
+    color: white;
+    background: black;
+    width: 250px;
 }
 
 #cover-title {
-    padding-top: 150px;
-    color: white;
+    margin-top: 250px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+    background: white;
+    color: black;
 }
+
+#cover-title h3 {
+    margin: 0;
+}
+
+#cover-link {
+    color: white;
+    margin-top: 180px;
+    font-size: .5em;
+}
+
 
 section img.rhtlogo {
     position: absolute;
