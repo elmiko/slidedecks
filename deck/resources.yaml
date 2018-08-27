@@ -1,0 +1,326 @@
+kind: List
+apiVersion: v1
+metadata: {}
+
+items:
+
+  - apiVersion: v1
+    kind: ServiceAccount
+    metadata:
+      name: oshinko
+
+  - apiVersion: v1
+    kind: RoleBinding
+    metadata:
+      name: oshinko-edit
+    roleRef:
+      name: edit
+    subjects:
+      - kind: ServiceAccount
+        name: oshinko
+
+  - kind: Template
+    apiVersion: v1
+    template: var-notebook
+    metadata:
+      name: var-notebook
+      annotations:
+        openshift.io/display-name: Workshop Jupyter Notebook
+        description: A Project Jupyter image containing the intro to machine learning, Spark basics, and value-at-risk notebooks.
+    objects:
+
+    - kind: Service
+      apiVersion: v1
+      metadata:
+        name: ${APPNAME}
+        labels:
+          name: ${APPNAME}
+      spec:
+        ports:
+          - protocol: TCP
+            port: 8888
+            targetPort: 8888
+        selector:
+          name: ${APPNAME}
+
+    - kind: Route
+      apiVersion: v1
+      metadata:
+        name: ${APPNAME}
+      spec:
+        host: ${ROUTE_HOSTNAME}
+        to:
+          kind: Service
+          name: ${APPNAME}
+
+    - kind: DeploymentConfig
+      apiVersion: v1
+      metadata:
+        name: ${APPNAME}
+      spec:
+        strategy:
+          type: Rolling
+        triggers:
+          - type: ConfigChange
+        replicas: 1
+        selector:
+          name: ${APPNAME}
+        template:
+          metadata:
+            labels:
+              name: ${APPNAME}
+          spec:
+            containers:
+              - name: ${APPNAME}
+                image: docker.io/radanalyticsio/workshop-notebook
+                env:
+                  - name: JUPYTER_NOTEBOOK_PASSWORD
+                    value: developer
+                ports:
+                  - containerPort: 8888
+                    protocol: TCP
+
+    parameters:
+      - name: APPNAME
+        description: the application name
+        value: var-notebook
+      - name: ROUTE_HOSTNAME
+        description: a hostname for the route
+
+  - apiVersion: v1
+    kind: Template
+    template: oshinko-webui
+    metadata:
+      name: oshinko-webui
+      annotations:
+        openshift.io/display-name: Oshinko WebUI service
+        description: A browser-based tool for managing Apache Spark clusters.
+    objects:
+      - kind: Service
+        apiVersion: v1
+        metadata:
+          name: ${OSHINKO_WEB_NAME}-proxy
+          labels:
+            name: ${OSHINKO_WEB_NAME}-proxy
+        spec:
+          ports:
+          - name: oc-proxy-port
+            protocol: TCP
+            port: 8001
+            targetPort: 8001
+          selector:
+            name: ${OSHINKO_WEB_NAME}
+      - kind: Service
+        apiVersion: v1
+        metadata:
+          name: ${OSHINKO_WEB_NAME}
+          labels:
+            name: ${OSHINKO_WEB_NAME}
+        spec:
+          ports:
+            - name: o-web-port
+              protocol: TCP
+              port: 8080
+              targetPort: 8080
+          selector:
+            name: ${OSHINKO_WEB_NAME}
+      - kind: Route
+        apiVersion: v1
+        metadata:
+          name: ${OSHINKO_WEB_NAME}
+        spec:
+          host: ${OSHINKO_WEB_ROUTE_HOSTNAME}
+          path: /webui
+          to:
+            kind: Service
+            name: ${OSHINKO_WEB_NAME}
+          alternateBackends:
+            - kind: Service
+              name: ${OSHINKO_WEB_NAME}
+      - kind: DeploymentConfig
+        apiVersion: v1
+        metadata:
+          name: ${OSHINKO_WEB_NAME}
+        spec:
+          strategy:
+            type: Rolling
+          triggers:
+            - type: ConfigChange
+          replicas: 1
+          selector:
+            name: ${OSHINKO_WEB_NAME}
+          template:
+            metadata:
+              labels:
+                name: ${OSHINKO_WEB_NAME}
+            spec:
+              containers:
+                - name: ${OSHINKO_WEB_NAME}
+                  image: ${OSHINKO_WEB_IMAGE}
+                  imagePullPolicy: Always
+                  ports:
+                    - name: o-web-port
+                      containerPort: 8080
+                      protocol: TCP
+                  env:
+                    - name: SPARK_DEFAULT
+                      value: ${SPARK_DEFAULT}
+                    - name: OSHINKO_REFRESH_INTERVAL
+                      value: ${OSHINKO_REFRESH_INTERVAL}
+                    - name: WEB_ROUTE_NAME
+                      value: ${OSHINKO_WEB_NAME}
+                    - name: INSECURE_WEBUI
+                      value: "true"
+                    - name: CURRENT_NAMESPACE
+                      valueFrom:
+                        fieldRef:
+                          fieldPath: metadata.namespace
+                  readinessProbe:
+                    failureThreshold: 3
+                    httpGet:
+                      path: /webui
+                      port: 8080
+                      scheme: HTTP
+                    periodSeconds: 10
+                    successThreshold: 1
+                    timeoutSeconds: 1
+                    initialDelaySeconds: 20
+                  livenessProbe:
+                    failureThreshold: 3
+                    httpGet:
+                      path: /webui
+                      port: 8080
+                      scheme: HTTP
+                    periodSeconds: 10
+                    successThreshold: 1
+                    timeoutSeconds: 1
+                    initialDelaySeconds: 20
+                - name: oc-proxy
+                  image: radanalyticsio/oc-proxy:stable
+                  imagePullPolicy: IfNotPresent
+                  args:
+                    - proxy
+                    - "-p"
+                    - '8001'
+                    - "--address=0.0.0.0"
+                    - "--disable-filter=true"
+                    - "--api-prefix=/proxy"
+                  ports:
+                    - name: oc-proxy-port
+                      containerPort: 8001
+                      protocol: TCP
+              serviceAccount: oshinko
+    parameters:
+      - name: SPARK_DEFAULT
+        description: Full name of the spark image to use when creating clusters
+        value: docker.io/elmiko/openshift-spark:training
+      - name: OSHINKO_WEB_NAME
+        description: Name of the oshinko web service
+        value: "oshinko-web"
+      - name: OSHINKO_WEB_IMAGE
+        description: Full name of the oshinko web image
+        required: true
+        value: radanalyticsio/oshinko-webui:stable
+      - name: OSHINKO_WEB_ROUTE_HOSTNAME
+        description: The hostname used to create the external route for the webui
+      - name: OSHINKO_REFRESH_INTERVAL
+        value: "5"
+        description: Refresh interval for updating cluster list in seconds
+
+  - kind: ImageStream
+    apiVersion: v1
+    metadata:
+      name: var-sandbox
+    spec: {}
+
+  - kind: BuildConfig
+    apiVersion: v1
+    metadata:
+      name: var-sandbox
+    spec:
+      source:
+        type: Git
+        git:
+          uri: https://github.com/radanalyticsio/var-sandbox
+          ref: master
+      strategy:
+        type: Docker
+      output:
+        to:
+          kind: ImageStreamTag
+          name: var-sandbox:latest
+
+  - kind: Template
+    apiVersion: v1
+    template: var-sandbox
+    metadata:
+      name: var-sandbox
+      annotations:
+        openshift.io/display-name: Value at Risk Web Application
+        description: |-
+          A sandbox application to demonstrate the value-at-risk algorithms
+          explored in the notebook.
+    objects:
+    - kind: Service
+      apiVersion: v1
+      metadata:
+        name: var-sandbox
+      spec:
+        ports:
+          - protocol: TCP
+            port: 8080
+            targetPort: 8080
+        selector:
+          name: var-sandbox
+
+    - kind: Route
+      apiVersion: v1
+      metadata:
+        name: var-sandbox
+      spec:
+        host: ${WEB_ROUTE_HOSTNAME}
+        to:
+          kind: Service
+          name: var-sandbox
+
+    - kind: DeploymentConfig
+      apiVersion: v1
+      metadata:
+        name: var-sandbox
+      spec:
+        strategy:
+          type: Rolling
+        triggers:
+          - type: ConfigChange
+          - type: ImageChange
+            imageChangeParams:
+              automatic: true
+              containerNames:
+                - var-sandbox
+              from:
+                kind: ImageStreamTag
+                name: var-sandbox:latest
+        replicas: 1
+        selector:
+          name: var-sandbox
+        template:
+          metadata:
+            labels:
+              name: var-sandbox
+          spec:
+            containers:
+              - name: var-sandbox
+                image: var-sandbox:latest
+                env:
+                  - name: VAR_SPARK_MASTER
+                    value: ${SPARK}
+                ports:
+                  - containerPort: 8080
+                    protocol: TCP
+
+    parameters:
+      - name: SPARK
+        description: connection string for the spark master
+      - name: WEB_ROUTE_HOSTNAME
+        description: The hostname used to create an external route to the webui
+
