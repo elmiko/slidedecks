@@ -1,40 +1,142 @@
 <!doctype html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>reveal.js - Markdown Example</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+<style>
+span.white {
+  color: white;
+}
+div.attribution {
+  font-size: .5em;
+  margin-top: 650px;
+}
+div.attribution a {
+  color: #4040ee;
+}
+ul {
+  font-size: .8em;
+}
+li {
+  margin-bottom: .5em;
+}
+</style>
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+
+              <section>
+                <h1>Hyperbaric</h1>
+                Pressure Driven Node Autoscaling for Kubernetes
+              </section>
+
+              <section data-background-transition="fade" data-background="assets/Nasa_decompression_chamber.jpg">
+                <div class="attribution">
+                  <span class="white">„Nasa decompression chamber“ Copyright</span>
+                  <a href="https://commons.wikimedia.org/wiki/User:Basilicofresco">Basilicofresco</a>
+                  <a href="https://creativecommons.org/licenses/by/2.0/legalcode">CC-BY-2.0</a>
+                </div>
+              </section>
+
+              <section data-markdown>
+                  <script type="text/template">
+                    "How can I get the cluster autoscaler to scale up at 80% CPU usage?"
+
+                    "it doesn't really work like that..." <!-- .element: class="fragment" data-fragment-index="1" -->
+                  </script>
+              </section>
+
+              <section data-markdown>
+                  <script type="text/template">
+                    **But what if it did?**
+                  </script>
+              </section>
+
+              <section data-markdown>
+                  <script type="text/template">
+                    ![Hyperbaric Architecture 1](assets/hb-arch-1.png)
+                  </script>
+              </section>
+
+              <section data-markdown data-transition="slide-in fade-out">
+                  <script type="text/template">
+                    ![Hyperbaric Architecture 2](assets/hb-arch-2.png)
+                  </script>
+              </section>
+
+              <section data-markdown data-transition="fade-in slide-out">
+                  <script type="text/template">
+                    ![Hyperbaric Architecture 3](assets/hb-arch-3.png)
+                  </script>
+              </section>
+
+              <section data-markdown>
+                  <script type="text/template">
+                    ![Hyperbaric Architecture 4](assets/hb-arch-4.png)
+
+                    * Each NodeGroup has a single Scalable Resource Reference
+                    * Scalable Resources align with Cluster API types (e.g. machinedeployments.cluster.x-k8s.io) <!-- .element: class="fragment" data-fragment-index="1" -->
+                    * Every Scalable Resource type has its own scaling implementation <!-- .element: class="fragment" data-fragment-index="2" -->
+                    * gRPC interface planned for custom Scalable Resources <!-- .element: class="fragment" data-fragment-index="3" -->
+                  </script>
+              </section>
+
+              <section data-markdown>
+                  <script type="text/template">
+                    ## Current Status
+                    * Experimental proof of concept
+                    * Working on MaxPods as the first resource type <!-- .element: class="fragment" data-fragment-index="1" -->
+                    * Passion project <!-- .element: class="fragment" data-fragment-index="2" -->
+                  </script>
+              </section>
+
+              <section data-markdown>
+                  <script type="text/template">
+                    ## Check it out!
+                    [gitlab.com/elmiko/hyperbaric](https://gitlab.com/elmiko/hyperbaric)
+
+                    ## Stay in touch
+                    Michael McCune
+
+                    [@elmiko@fosstodon.org](https://fosstodon.org/@elmiko)
+                  </script>
+              </section>
+
+            </div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/math/math.js"></script>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                fragments: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
+
+            Reveal.configure({ pdfSeparateFragments: false });
+
 		</script>
+
 	</body>
 </html>
